@@ -1,0 +1,20 @@
+[
+  {"catalogoCodigoItem":"22225","nome":"Serviço Engenharia","status":"APROVADO"},
+  {"catalogoCodigoItem":"1805","nome":"Obras Civis de Aeroportos","status":"APROVADO"},
+  {"catalogoCodigoItem":"17434","nome":"Avaliação / Comercialização / Divulgação - Obra de Arte","status":"NAO_PRIORITARIO"},
+  {"catalogoCodigoItem":"22896","nome":"Conservação / Manutenção / Restauração de Rodovia","status":"APROVADO"},
+  {"catalogoCodigoItem":"1759","nome":"Obras Civis de Pontes e Viadutos - Concreto","status":"APROVADO"},
+  {"catalogoCodigoItem":"18376","nome":"Manutenção / Conservação / Recuperação - Vias Públicas","status":"APROVADO"},
+  {"catalogoCodigoItem":"5622","nome":"Obras Civis Públicas ( Construção )","status":"APROVADO"},
+  {"catalogoCodigoItem":"1783","nome":"Obras Civis de Rodovias / Estacionamento","status":"APROVADO"},
+  {"catalogoCodigoItem":"1406","nome":"Obras Civis de Pavimentação Asfáltica","status":"APROVADO"},
+  {"catalogoCodigoItem":"1929","nome":"Obras Civis de Linhas de Transmissão de Energia Elétrica","status":"APROVADO"},
+  {"catalogoCodigoItem":"1910","nome":"Obras Civis - Subestações Energia Elétrica","status":"APROVADO"},
+  {"catalogoCodigoItem":"1945","nome":"Obras Civis de Redes de Telecomunicações","status":"APROVADO"},
+  {"catalogoCodigoItem":"23060","nome":"Fiscalização Obras Civis","status":"APROVADO"},
+  {"catalogoCodigoItem":"1872","nome":"Obras Civis de Saneamento - Captação, Adução e  Distribuiçãode Água e Esgoto Sanitário","status":"APROVADO"},
+  {"catalogoCodigoItem":"20249","nome":"Administração Presídio","status":"REVISAO_MAO_DE_OBRA"},
+  {"catalogoCodigoItem":"5053","nome":"Manutenção de Torres de Linhas de Transmissão","status":"APROVADO"},
+  {"catalogoCodigoItem":"4685","nome":"Instalação e Montagem Linhas de Transmissão - Energia Elétrica Até 500kv","status":"APROVADO"},
+  {"catalogoCodigoItem":"22772","nome":"Transporte de Mudança - Intermunicipal","status":"NAO_PRIORITARIO"}
+]
