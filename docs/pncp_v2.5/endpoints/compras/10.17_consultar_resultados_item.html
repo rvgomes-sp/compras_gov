@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<!-- saved from url=(0104)https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_resultados_de_item_de_uma_contratacao.html -->
+<html class="writer-html5" lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10.17. Consultar Resultados de Item de uma Contratação — documentação Manual de Integração do PNCP v. 2.5</title>
+      <link rel="stylesheet" href="./10.17. Consultar Resultados de Item de uma Contratação — documentação Manual de Integração do PNCP v. 2.5_files/pygments.css" type="text/css">
+      <link rel="stylesheet" href="./10.17. Consultar Resultados de Item de uma Contratação — documentação Manual de Integração do PNCP v. 2.5_files/theme.css" type="text/css">
+      <link rel="stylesheet" href="./10.17. Consultar Resultados de Item de uma Contratação — documentação Manual de Integração do PNCP v. 2.5_files/custom.css" type="text/css">
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="./10.17. Consultar Resultados de Item de uma Contratação — documentação Manual de Integração do PNCP v. 2.5_files/jquery.js.baixados"></script>
+        <script src="./10.17. Consultar Resultados de Item de uma Contratação — documentação Manual de Integração do PNCP v. 2.5_files/_sphinx_javascript_frameworks_compat.js.baixados"></script>
+        <script data-url_root="../" id="documentation_options" src="./10.17. Consultar Resultados de Item de uma Contratação — documentação Manual de Integração do PNCP v. 2.5_files/documentation_options.js.baixados"></script>
+        <script src="./10.17. Consultar Resultados de Item de uma Contratação — documentação Manual de Integração do PNCP v. 2.5_files/doctools.js.baixados"></script>
+        <script src="./10.17. Consultar Resultados de Item de uma Contratação — documentação Manual de Integração do PNCP v. 2.5_files/sphinx_highlight.js.baixados"></script>
+        <script src="./10.17. Consultar Resultados de Item de uma Contratação — documentação Manual de Integração do PNCP v. 2.5_files/translations.js.baixados"></script>
+    <script src="./10.17. Consultar Resultados de Item de uma Contratação — documentação Manual de Integração do PNCP v. 2.5_files/theme.js.baixados"></script>
+    <link rel="index" title="Índice" href="https://pncp.gov.br/manual/pt-br/latest/genindex.html">
+    <link rel="search" title="Buscar" href="https://pncp.gov.br/manual/pt-br/latest/search.html">
+    <link rel="next" title="10.18. Consultar um Resultado específico de Item de uma Contratação" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_um_resultado_especifico_de_item_de_uma_contratacao.html">
+    <link rel="prev" title="10.16. Retificar Resultado do Item de uma Contratação" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/retificar_resultado_do_item_de_uma_contratacao.html"> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+
+          
+          
+          <a href="https://pncp.gov.br/manual/pt-br/latest/index.html" class="icon icon-home">
+            Manual de Integração do PNCP
+          </a>
+              <div class="version">
+                v. 2.5
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="https://pncp.gov.br/manual/pt-br/latest/search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current" aria-expanded="true">
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/formatos_de_visualizacao.html">1. Formatos de Visualização</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/historico_de_versoes/index.html">2. Histórico de Versões</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/objetivo/index.html">3. Objetivo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/protocolo_de_comunicacao/index.html">4. Protocolo de Comunicação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/acesso_ao_pncp/index.html">5. Acesso ao PNCP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/recomendacoes_iniciais/index.html">6. Recomendações Iniciais</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/tabelas_de_dominio/index.html">7. Tabelas de Domínio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/usuario/index.html">8. Usuário</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/plano_de_contratacao/index.html">9. Plano de Contratação</a></li>
+<li class="toctree-l1 current" aria-expanded="true"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/index.html"><button class="toctree-expand" title="Open/close menu"></button>10. Contratação</a><ul class="" aria-expanded="false">
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/inserir_contratacao.html">10.1. Inserir Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/retificar_contratacao.html">10.2. Retificar Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/retificar_parcialmente_uma_contratacao.html">10.3. Retificar Parcialmente uma Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/excluir_contratacao.html">10.4. Excluir Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_uma_contratacao.html">10.5. Consultar uma Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/inserir_documento_a_uma_contratacao.html">10.6. Inserir Documento a uma Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/excluir_documento_de_uma_contratacao.html">10.7. Excluir Documento de uma Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_todos_documentos_de_uma_contratacao.html">10.8. Consultar Todos Documentos de uma Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/baixar_documento_de_uma_contratacao.html">10.9. Baixar Documento de uma Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/inserir_itens_a_uma_contratacao.html">10.10. Inserir Itens a uma Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/retificar_item_de_uma_contratacao.html">10.11. Retificar Item de uma Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/retificar_parcialmente_um_item_de_uma_contratacao.html">10.12. Retificar parcialmente um Item de uma Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_itens_de_uma_contratacao.html">10.13. Consultar Itens de uma Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_item_de_uma_contratacao.html">10.14. Consultar Item de uma Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/inserir_resultado_do_item_de_uma_contratacao.html">10.15. Inserir Resultado do Item de uma Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/retificar_resultado_do_item_de_uma_contratacao.html">10.16. Retificar Resultado do Item de uma Contratação</a></li>
+<li class="toctree-l2 current" aria-expanded="true"><a class="reference internal current" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_resultados_de_item_de_uma_contratacao.html#" aria-expanded="true"><button class="toctree-expand" title="Open/close menu"></button>10.17. Consultar Resultados de Item de uma Contratação</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_resultados_de_item_de_uma_contratacao.html#detalhes-da-requisicao"><button class="toctree-expand" title="Open/close menu"></button>10.17.1. Detalhes da Requisição</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_resultados_de_item_de_uma_contratacao.html#exemplo-de-payload">10.17.1.1. Exemplo de Payload</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_resultados_de_item_de_uma_contratacao.html#exemplo-requisicao-curl">10.17.2. Exemplo Requisição (cURL)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_resultados_de_item_de_uma_contratacao.html#dados-de-entrada">10.17.3. Dados de Entrada</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_resultados_de_item_de_uma_contratacao.html#dados-de-retorno">10.17.4. Dados de Retorno</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_resultados_de_item_de_uma_contratacao.html#codigos-de-retorno">10.17.5. Códigos de Retorno</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_um_resultado_especifico_de_item_de_uma_contratacao.html">10.18. Consultar um Resultado específico de Item de uma Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_historico_da_contratacao.html">10.19. Consultar Histórico da Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/inserir_imagem_de_um_item_de_uma_contratacao.html">10.20. Inserir Imagem de um Item de uma Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/excluir_imagem_de_um_item_de_uma_contratacao.html">10.21. Excluir Imagem de um Item de uma Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_imagens_de_um_item_de_contratacao.html">10.22. Consultar Imagens de um Item de Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_imagem_de_um_item_de_contratacao.html">10.23. Consultar Imagem de um Item de Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/inserir_fonte_orcamentaria_da_contratacao.html">10.24. Inserir Fonte Orçamentária da Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/excluir_fonte_orcamentaria_da_contrataca.html">10.25. Excluir Fonte Orçamentária da Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_fonte_orcamentaria_da_contratacao.html">10.26. Consultar Fonte Orçamentária da Contratação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_todas_as_fontes_orcamentarias_da_contratacao.html">10.27. Consultar Todas as Fontes Orçamentárias da Contratação</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/index.html">11. Atas de Registro de Preço</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contrato_empenho/index.html">12. Contratos/Empenhos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/empenho/index.html">13. Empenho</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/orgao_entidade/index.html">14. Órgão/Entidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/suporte/index.html">15. Suporte</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="https://pncp.gov.br/manual/pt-br/latest/index.html">Manual de Integração do PNCP</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="https://pncp.gov.br/manual/pt-br/latest/index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="https://pncp.gov.br/manual/pt-br/latest/contratacao/index.html"><span class="section-number">10. </span>Contratação</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">10.17. </span>Consultar Resultados de Item de uma Contratação</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="https://pncp.gov.br/manual/pt-br/latest/_sources/contratacao/consultar_resultados_de_item_de_uma_contratacao.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
+      </li>
+  </ul>
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="consultar-resultados-de-item-de-uma-contratacao">
+<h1><span class="section-number">10.17. </span>Consultar Resultados de Item de uma Contratação<a class="headerlink" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_resultados_de_item_de_uma_contratacao.html#consultar-resultados-de-item-de-uma-contratacao" title="Link permanente para este cabeçalho"></a></h1>
+<p>Serviço para recuperar os resultados cadastrados para um item de uma contratação.</p>
+<section id="detalhes-da-requisicao">
+<h2><span class="section-number">10.17.1. </span>Detalhes da Requisição<a class="headerlink" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_resultados_de_item_de_uma_contratacao.html#detalhes-da-requisicao" title="Link permanente para este cabeçalho"></a></h2>
+<div class="wy-table-responsive"><table class="docutils align-default" style="width: 100%">
+<thead>
+<tr class="row-odd"><th class="head"><p>Endpoint</p></th>
+<th class="head"><p>Método HTTP</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>/v1/orgaos/{cnpj}/compras/{ano}/{sequencial}/itens/{numeroItem}/resultados</p></td>
+<td><p>GET</p></td>
+</tr>
+</tbody>
+</table></div>
+<section id="exemplo-de-payload">
+<h3><span class="section-number">10.17.1.1. </span>Exemplo de Payload<a class="headerlink" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_resultados_de_item_de_uma_contratacao.html#exemplo-de-payload" title="Link permanente para este cabeçalho"></a></h3>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>      Não se aplica
+</pre></div>
+</div>
+</section>
+</section>
+<section id="exemplo-requisicao-curl">
+<h2><span class="section-number">10.17.2. </span>Exemplo Requisição (cURL)<a class="headerlink" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_resultados_de_item_de_uma_contratacao.html#exemplo-requisicao-curl" title="Link permanente para este cabeçalho"></a></h2>
+<div class="highlight-Bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="w">      </span>curl<span class="w"> </span>-k<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span>-i<span class="w"> </span><span class="se">\</span>
+<span class="linenos">2</span><span class="w">        </span><span class="s2">"</span><span class="si">${</span><span class="nv">BASE_URL</span><span class="si">}</span><span class="s2">/v1/orgaos/10000000000003/compras/2021/1/itens/1/resultados"</span><span class="w"> </span><span class="se">\</span>
+<span class="linenos">3</span><span class="w">        </span>-H<span class="w"> </span><span class="s2">"Accept: */*"</span>
+</pre></div>
+</div>
+</section>
+<section id="dados-de-entrada">
+<h2><span class="section-number">10.17.3. </span>Dados de Entrada<a class="headerlink" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_resultados_de_item_de_uma_contratacao.html#dados-de-entrada" title="Link permanente para este cabeçalho"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Alimentar os parâmetros <code class="docutils literal notranslate"><span class="pre">{cnpj}</span></code>, <code class="docutils literal notranslate"><span class="pre">{ano},</span> <span class="pre">``{sequencial}</span></code> e <code class="docutils literal notranslate"><span class="pre">{numeroItem}</span></code> na URL.</p>
+</div>
+<div class="wy-table-responsive"><table class="quebra-linha-ultima-coluna docutils align-default" style="width: 100%">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 16%">
+<col style="width: 58%">
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Id</p></th>
+<th class="head"><p>Campo</p></th>
+<th class="head"><p>Tipo</p></th>
+<th class="head"><p>Obrigatório</p></th>
+<th class="head"><p>Descrição</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>cnpj</p></td>
+<td><p>Texto (14)</p></td>
+<td><p>Sim</p></td>
+<td><p>Cnpj do órgão originário da contratação informado na inclusão (proprietário da contratação ou alienação de bens)</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>ano</p></td>
+<td><p>Inteiro</p></td>
+<td><p>Sim</p></td>
+<td><p>Ano da contratação.</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>sequencial</p></td>
+<td><p>Inteiro</p></td>
+<td><p>Sim</p></td>
+<td><p>Sequencial da contratação no PNCP; Número sequencial gerado no momento que a contratação foi inserida no PNCP</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>numeroItem</p></td>
+<td><p>Inteiro</p></td>
+<td><p>Sim</p></td>
+<td><p>Número do item na contratação (único e sequencial crescente)</p></td>
+</tr>
+</tbody>
+</table></div>
+</section>
+<section id="dados-de-retorno">
+<h2><span class="section-number">10.17.4. </span>Dados de Retorno<a class="headerlink" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_resultados_de_item_de_uma_contratacao.html#dados-de-retorno" title="Link permanente para este cabeçalho"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>A resposta apresenta a lista de resultados dos itens da contratação, incluindo dados do fornecedor, valores homologados e informações complementares.</p>
+</div>
+<div class="wy-table-responsive"><table class="quebra-linha-dois-quatro docutils align-default" style="width: 100%">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 25%">
+<col style="width: 15%">
+<col style="width: 55%">
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Id</p></th>
+<th class="head"><p>Campo</p></th>
+<th class="head"><p>Tipo</p></th>
+<th class="head"><p>Descrição</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>listaResultados</p></td>
+<td><p>Lista</p></td>
+<td><p>Resultados de um item da contratação.</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.1</p></td>
+<td><p>numeroItem</p></td>
+<td><p>Inteiro</p></td>
+<td><p>Número do item na contratação (único e sequencial crescente) a que está relacionado o Resultado</p></td>
+</tr>
+<tr class="row-even"><td><p>1.2</p></td>
+<td><p>sequencialResultado</p></td>
+<td><p>Inteiro</p></td>
+<td><p>Sequencial do resultado do item da contratação no PNCP; Número sequencial gerado no momento que o resultado do item foi inserido no PNCP</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.3</p></td>
+<td><p>quantidadeHomologada</p></td>
+<td><p>Decimal</p></td>
+<td><p>Quantidade do item homologada. Precisão de até 4 dígitos decimais; Ex: 1.0001;</p></td>
+</tr>
+<tr class="row-even"><td><p>1.4</p></td>
+<td><p>valorUnitarioHomologado</p></td>
+<td><p>Decimal</p></td>
+<td><p>Valor unitário do item homologado. Precisão de até 4 dígitos decimais; Ex: 100.0001;</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.5</p></td>
+<td><p>percentualDesconto</p></td>
+<td><p>Decimal</p></td>
+<td><p>Percentual de desconto aplicado quando o critério de julgamento for Maior Desconto. Precisão de 4 dígitos decimais; Ex: 10.0000;</p></td>
+</tr>
+<tr class="row-even"><td><p>1.6</p></td>
+<td><p>tipoPessoa</p></td>
+<td><p>Texto (2)</p></td>
+<td><p>PJ - Pessoa jurídica; PF - Pessoa física; PE - Pessoa estrangeira;</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.7</p></td>
+<td><p>niFornecedor</p></td>
+<td><p>Texto (30)</p></td>
+<td><p>Número de identificação do fornecedor/arrematante; CNPJ, CPF ou identificador de empresa estrangeira;</p></td>
+</tr>
+<tr class="row-even"><td><p>1.8</p></td>
+<td><p>nomeRazaoSocialFornecedor</p></td>
+<td><p>Texto (100)</p></td>
+<td><p>Nome ou razão social do fornecedor/arrematante</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.9</p></td>
+<td><p>porteFornecedorId</p></td>
+<td><p>Inteiro</p></td>
+<td><p>Porte do fornecedor: 1 - ME; 2 - EPP; 3 - Demais; 4 - Não se aplica; 5 - Não Informado;</p></td>
+</tr>
+<tr class="row-even"><td><p>1.10</p></td>
+<td><p>porteFornecedorNome</p></td>
+<td><p>Texto (30)</p></td>
+<td><p>Nome do porte do fornecedor.</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.11</p></td>
+<td><p>naturezaJuridicaId</p></td>
+<td><p>Inteiro</p></td>
+<td><p>Código da Natureza Jurídica do fornecedor</p></td>
+</tr>
+<tr class="row-even"><td><p>1.12</p></td>
+<td><p>naturezaJuridicaNome</p></td>
+<td><p>Texto (100)</p></td>
+<td><p>Natureza Jurídica do fornecedor</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.13</p></td>
+<td><p>codigoPais</p></td>
+<td><p>Texto (3)</p></td>
+<td><p>Código ISO para o país dofornecedor/arrematante;Ex: BRA - para fornecedores do Brasil;</p></td>
+</tr>
+<tr class="row-even"><td><p>1.14</p></td>
+<td><p>indicadorSubcontratacao</p></td>
+<td><p>Booleano</p></td>
+<td><p>Indicador de sub-contratação do item; false - Não haverá subcontratação; true - Haverá subcontratação de fornecedor;</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.15</p></td>
+<td><p>ordemClassificacaoSrp</p></td>
+<td><p>Inteiro</p></td>
+<td><p>Ordem de classificação do fornecedor/arrematante na contratação</p></td>
+</tr>
+<tr class="row-even"><td><p>1.16</p></td>
+<td><p>dataResultado</p></td>
+<td><p>Data</p></td>
+<td><p>Data do resultado da homologação do item</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.17</p></td>
+<td><p>dataCancelamento</p></td>
+<td><p>Data e Hora</p></td>
+<td><p>Data de cancelamento do resultado item</p></td>
+</tr>
+<tr class="row-even"><td><p>1.18</p></td>
+<td><p>motivoCancelamento</p></td>
+<td><p>Texto (200)</p></td>
+<td><p>Observação com o motivo do cancelamento do resultado item</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.19</p></td>
+<td><p>situacaoCompraItemResultadoId</p></td>
+<td><p>Inteiro</p></td>
+<td><p>Código conforme tabela Situação do Resultado do Item</p></td>
+</tr>
+<tr class="row-even"><td><p>1.20</p></td>
+<td><p>situacaoCompraItemResultadoNome</p></td>
+<td><p>Texto (30)</p></td>
+<td><p>Texto situação conforme tabela Situação do Resultado do Item</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.21</p></td>
+<td><p>dataInclusao</p></td>
+<td><p>Data e Hora</p></td>
+<td><p>Data da inclusão do registro do resultado do item no PNCP</p></td>
+</tr>
+<tr class="row-even"><td><p>1.22</p></td>
+<td><p>dataAtualizacao</p></td>
+<td><p>Data e Hora</p></td>
+<td><p>Data da última atualização do registro do resultado do item no PNCP</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.23</p></td>
+<td><p>numeroControlePNCPCompra</p></td>
+<td><p>Texto (30)</p></td>
+<td><p>Número de Controle PNCP da contratação</p></td>
+</tr>
+<tr class="row-even"><td><p>1.24</p></td>
+<td><p>aplicacaoMargemPreferencia</p></td>
+<td><p>Booleano</p></td>
+<td><p>Indicador da aplicação da Margem de Preferência para o item. (False/Não; True/Sim)</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.25</p></td>
+<td><p>amparoLegalMargemPreferencia</p></td>
+<td></td>
+<td><p>Dados da fundamentação legal da aplicação da margem de preferência.</p></td>
+</tr>
+<tr class="row-even"><td><p>1.25.1</p></td>
+<td><p>id</p></td>
+<td><p>Inteiro</p></td>
+<td><p>Código da fundamentação legal da aplicação da margem de preferência.</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.25.2</p></td>
+<td><p>nome</p></td>
+<td><p>Texto</p></td>
+<td><p>Nome da fundamentação legal da aplicação da margem de preferência.</p></td>
+</tr>
+<tr class="row-even"><td><p>1.25.3</p></td>
+<td><p>descricao</p></td>
+<td><p>Texto</p></td>
+<td><p>Descrição da fundamentação legal da aplicação da margem de preferência.</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.25.4</p></td>
+<td><p>statusAtivo</p></td>
+<td><p>Booleano</p></td>
+<td><p>Status da fundamentação legal no PNCP. (False/Inativo; True/Ativo)</p></td>
+</tr>
+<tr class="row-even"><td><p>1.26</p></td>
+<td><p>paisOrigemProdutoServico</p></td>
+<td></td>
+<td><p>Dados do País de origem do produto ou serviço</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.26.1</p></td>
+<td><p>id</p></td>
+<td><p>Texto</p></td>
+<td><p>Símbolo do País de origem do produto ou serviço no padrão ISO Alpha-3. Ex: BRA, ARG etc.</p></td>
+</tr>
+<tr class="row-even"><td><p>1.26.2</p></td>
+<td><p>nome</p></td>
+<td><p>Texto</p></td>
+<td><p>Nome do País de origem do produto ou serviço.</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.27</p></td>
+<td><p>aplicacaoBeneficioMeEpp</p></td>
+<td><p>Booleano</p></td>
+<td><p>Indicador da aplicação do benefício ME/EPP para o item. (False/Não; True/Sim)</p></td>
+</tr>
+<tr class="row-even"><td><p>1.28</p></td>
+<td><p>aplicacaoCriterioDesempate</p></td>
+<td><p>Booleano</p></td>
+<td><p>Indicador da aplicação de critério de desempate conforme Art. 60 para o item. (False/Não; True/Sim)</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.29</p></td>
+<td><p>amparoLegalCriterioDesempate</p></td>
+<td></td>
+<td><p>Dados da fundamentação legal da aplicação de critério de desempate conforme o Art. 60.</p></td>
+</tr>
+<tr class="row-even"><td><p>1.29.1</p></td>
+<td><p>id</p></td>
+<td><p>Inteiro</p></td>
+<td><p>Código da fundamentação legal da aplicação de critério de desempate</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.29.2</p></td>
+<td><p>nome</p></td>
+<td><p>Texto</p></td>
+<td><p>Nome da fundamentação legal da aplicação de critério de desempate</p></td>
+</tr>
+<tr class="row-even"><td><p>1.29.3</p></td>
+<td><p>descricao</p></td>
+<td><p>Texto</p></td>
+<td><p>Descrição da fundamentação legal da aplicação de critério de desempate</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.29.4</p></td>
+<td><p>statusAtivo</p></td>
+<td><p>Booleano</p></td>
+<td><p>Status da fundamentação legal no PNCP. (False/Inativo; True/Ativo)</p></td>
+</tr>
+<tr class="row-even"><td><p>1.30</p></td>
+<td><p>dataCotacaoMoedaEstrangeira</p></td>
+<td><p>Data</p></td>
+<td><p>Data/Hora da cotação da moeda estrangeira no formato timestampwithout zone.</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.31</p></td>
+<td><p>timezoneCotacaoMoedaEstrangeira</p></td>
+<td><p>Texto</p></td>
+<td><p>Time Zone no momento da cotação da moeda estrangeira. Offset no formato ‘UTC±[hh][mm]’ ou somente ‘UTC±[hh]’.</p></td>
+</tr>
+<tr class="row-even"><td><p>1.32</p></td>
+<td><p>valorNominalMoedaEstrangeira</p></td>
+<td><p>Decimal</p></td>
+<td><p>Valor nominal da moeda nacional (BRL) em relação uma unidade da moeda estrangeira no momento da cotação.</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.33</p></td>
+<td><p>moedaEstrangeira</p></td>
+<td><p>Objeto</p></td>
+<td><p>Dados da moeda estrangeira</p></td>
+</tr>
+<tr class="row-even"><td><p>1.33.1</p></td>
+<td><p>id</p></td>
+<td><p>Inteiro</p></td>
+<td><p>Código da moeda estrangeira.</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.33.2</p></td>
+<td><p>simbolo</p></td>
+<td><p>Texto</p></td>
+<td><p>Símbolo da moeda estrangeira no padrão ISO Alpha-3. Ex: USD, EUR, GBP etc.</p></td>
+</tr>
+<tr class="row-even"><td><p>1.33.3</p></td>
+<td><p>nome</p></td>
+<td><p>Texto</p></td>
+<td><p>Nome da moeda estrangeira.</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-azul-claro">2</span></p></td>
+<td><p><span class="destaque-azul-claro">localidadeFornecedor</span></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-azul-claro">2.1</span></p></td>
+<td><p><span class="destaque-azul-claro">codigoIbge</span></p></td>
+<td><p><span class="destaque-azul-claro">Texto</span></p></td>
+<td><p><span class="destaque-azul-claro">Código IBGE do Município</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-azul-claro">2.2</span></p></td>
+<td><p><span class="destaque-azul-claro">nomeMunicipio</span></p></td>
+<td><p><span class="destaque-azul-claro">Texto</span></p></td>
+<td><p><span class="destaque-azul-claro">Nome do município</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-azul-claro">2.3</span></p></td>
+<td><p><span class="destaque-azul-claro">uf</span></p></td>
+<td><p><span class="destaque-azul-claro">Texto</span></p></td>
+<td><p><span class="destaque-azul-claro">Código da unidade federativa do município</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-azul-claro">2.4</span></p></td>
+<td><p><span class="destaque-azul-claro">ufNome</span></p></td>
+<td><p><span class="destaque-azul-claro">Texto</span></p></td>
+<td><p><span class="destaque-azul-claro">Nome da unidade federativa do município</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-azul-claro">3</span></p></td>
+<td><p><span class="destaque-azul-claro">localidadeExterior</span></p></td>
+<td><p><span class="destaque-azul-claro">Texto</span></p></td>
+<td><p><span class="destaque-azul-claro">Nome Localidade Exterior do Fornecedor/Arrematante</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-azul-claro">4</span></p></td>
+<td><p><span class="destaque-azul-claro">reservaRemanescenteId</span></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-azul-claro">4.1</span></p></td>
+<td><p><span class="destaque-azul-claro">codigo</span></p></td>
+<td><p><span class="destaque-azul-claro">Inteiro</span></p></td>
+<td><p><span class="destaque-azul-claro">Identificador de Fornecedor Reserva ou Remanescente (1 - Não se aplica; 2 – Remanescente; 3 - Cadastro de Reserva)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-azul-claro">4.2</span></p></td>
+<td><p><span class="destaque-azul-claro">nome</span></p></td>
+<td><p><span class="destaque-azul-claro">Texto</span></p></td>
+<td><p><span class="destaque-azul-claro">Identificador de Fornecedor Reserva ou Remanescente (1 - Não se aplica; 2 – Remanescente; 3 - Cadastro de Reserva)</span></p></td>
+</tr>
+</tbody>
+</table></div>
+</section>
+<section id="codigos-de-retorno">
+<h2><span class="section-number">10.17.5. </span>Códigos de Retorno<a class="headerlink" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_resultados_de_item_de_uma_contratacao.html#codigos-de-retorno" title="Link permanente para este cabeçalho"></a></h2>
+<div class="wy-table-responsive"><table class="docutils align-default" style="width: 100%">
+<thead>
+<tr class="row-odd"><th class="head"><p>Código HTTP</p></th>
+<th class="head"><p>Mensagem</p></th>
+<th class="head"><p>Tipo</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>200</p></td>
+<td><p>OK</p></td>
+<td><p>Sucesso</p></td>
+</tr>
+<tr class="row-odd"><td><p>400</p></td>
+<td><p>BadRequest</p></td>
+<td><p>Erro</p></td>
+</tr>
+<tr class="row-even"><td><p>422</p></td>
+<td><p>Unprocessable Entity</p></td>
+<td><p>Erro</p></td>
+</tr>
+<tr class="row-odd"><td><p>500</p></td>
+<td><p>Internal Server Error</p></td>
+<td><p>Erro</p></td>
+</tr>
+</tbody>
+</table></div>
+<p></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="https://pncp.gov.br/manual/pt-br/latest/contratacao/retificar_resultado_do_item_de_uma_contratacao.html" class="btn btn-neutral float-left" title="10.16. Retificar Resultado do Item de uma Contratação" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_um_resultado_especifico_de_item_de_uma_contratacao.html" class="btn btn-neutral float-right" title="10.18. Consultar um Resultado específico de Item de uma Contratação" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr>
+
+  <div role="contentinfo">
+    <p>© Direitos autorais 2026, Ministério da Gestão e Inovação em Serviços Públicos - MGI.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org/">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+
+</body></html>

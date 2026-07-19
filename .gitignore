@@ -1,0 +1,15 @@
+# Dados operacionais e resultados nunca entram no repositório
+data/
+output/
+*.jsonl
+*.sqlite
+*.sqlite3
+*.db
+*.log
+*.zip
+
+# Artefatos temporários
+*.tmp
+__pycache__/
+*.pyc
+

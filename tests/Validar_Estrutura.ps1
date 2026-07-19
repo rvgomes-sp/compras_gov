@@ -6,6 +6,8 @@ $ErrorActionPreference = "Stop"
 $apiPath = Join-Path $Root "config\api\evt007_manual_2_5.json"
 $execPath = Join-Path $Root "config\execucao\teste_d1.json"
 $collectorPath = Join-Path $Root "src\Coletar_EVT007.ps1"
+$importadorV2Path = Join-Path $Root "Importar_Candidatos_V2.ps1"
+$candidatosV2Path = Join-Path $Root "data\candidatos\candidatos_evt007.csv"
 
 foreach ($path in @($apiPath, $execPath, $collectorPath)) {
     if (-not (Test-Path -LiteralPath $path)) { throw "Arquivo obrigatorio ausente: $path" }
@@ -36,9 +38,18 @@ foreach ($trecho in @('dataResultado','logManutencaoDataInclusao','categoriaLogM
 if ($collector -match 'DiscoveryDays|result-days|90\s*dias|120\s*dias') {
     throw "O coletor contem vestigio de janela historica proibida."
 }
+if (Test-Path -LiteralPath $importadorV2Path) {
+    throw "Contaminacao detectada: importador de candidatos do V2 presente."
+}
+if (Test-Path -LiteralPath $candidatosV2Path) {
+    throw "Contaminacao detectada: CSV de candidatos do V2 presente."
+}
+if ($collector -match 'candidatos_evt007\.csv') {
+    throw "O coletor nao pode possuir caminho padrao para candidatos herdados."
+}
 
 Write-Host "[OK] Estrutura validada."
 Write-Host "[OK] EVT007 usa dataResultado."
 Write-Host "[OK] Modalidade 6 excluida."
 Write-Host "[OK] D-2 e janelas superiores desativados."
-
+Write-Host "[OK] Nenhum candidato ou importador do V2 esta ativo."

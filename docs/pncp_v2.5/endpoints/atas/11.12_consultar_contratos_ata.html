@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<!-- saved from url=(0117)https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.html -->
+<html class="writer-html5" lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11.12. Consultar Contratos de Ata de Registro de Preço — documentação Manual de Integração do PNCP v. 2.5</title>
+      <link rel="stylesheet" href="./11.12. Consultar Contratos de Ata de Registro de Preço — documentação Manual de Integração do PNCP v. 2.5_files/pygments.css" type="text/css">
+      <link rel="stylesheet" href="./11.12. Consultar Contratos de Ata de Registro de Preço — documentação Manual de Integração do PNCP v. 2.5_files/theme.css" type="text/css">
+      <link rel="stylesheet" href="./11.12. Consultar Contratos de Ata de Registro de Preço — documentação Manual de Integração do PNCP v. 2.5_files/custom.css" type="text/css">
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="./11.12. Consultar Contratos de Ata de Registro de Preço — documentação Manual de Integração do PNCP v. 2.5_files/jquery.js.baixados"></script>
+        <script src="./11.12. Consultar Contratos de Ata de Registro de Preço — documentação Manual de Integração do PNCP v. 2.5_files/_sphinx_javascript_frameworks_compat.js.baixados"></script>
+        <script data-url_root="../" id="documentation_options" src="./11.12. Consultar Contratos de Ata de Registro de Preço — documentação Manual de Integração do PNCP v. 2.5_files/documentation_options.js.baixados"></script>
+        <script src="./11.12. Consultar Contratos de Ata de Registro de Preço — documentação Manual de Integração do PNCP v. 2.5_files/doctools.js.baixados"></script>
+        <script src="./11.12. Consultar Contratos de Ata de Registro de Preço — documentação Manual de Integração do PNCP v. 2.5_files/sphinx_highlight.js.baixados"></script>
+        <script src="./11.12. Consultar Contratos de Ata de Registro de Preço — documentação Manual de Integração do PNCP v. 2.5_files/translations.js.baixados"></script>
+    <script src="./11.12. Consultar Contratos de Ata de Registro de Preço — documentação Manual de Integração do PNCP v. 2.5_files/theme.js.baixados"></script>
+    <link rel="index" title="Índice" href="https://pncp.gov.br/manual/pt-br/latest/genindex.html">
+    <link rel="search" title="Buscar" href="https://pncp.gov.br/manual/pt-br/latest/search.html">
+    <link rel="next" title="11.13. Inserir Parte Envolvida na Ata de Registro de Preço" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/inserir_parte_envolvida_na_ata_de_registro_de_preco.html">
+    <link rel="prev" title="11.11. Consultar Histórico da Ata de Registro de Preço" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_historico_da_ata_de_registro_de_preco.html"> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+
+          
+          
+          <a href="https://pncp.gov.br/manual/pt-br/latest/index.html" class="icon icon-home">
+            Manual de Integração do PNCP
+          </a>
+              <div class="version">
+                v. 2.5
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="https://pncp.gov.br/manual/pt-br/latest/search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current" aria-expanded="true">
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/formatos_de_visualizacao.html">1. Formatos de Visualização</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/historico_de_versoes/index.html">2. Histórico de Versões</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/objetivo/index.html">3. Objetivo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/protocolo_de_comunicacao/index.html">4. Protocolo de Comunicação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/acesso_ao_pncp/index.html">5. Acesso ao PNCP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/recomendacoes_iniciais/index.html">6. Recomendações Iniciais</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/tabelas_de_dominio/index.html">7. Tabelas de Domínio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/usuario/index.html">8. Usuário</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/plano_de_contratacao/index.html">9. Plano de Contratação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contratacao/index.html">10. Contratação</a></li>
+<li class="toctree-l1 current" aria-expanded="true"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/index.html"><button class="toctree-expand" title="Open/close menu"></button>11. Atas de Registro de Preço</a><ul class="" aria-expanded="false">
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/inserir_ata_de_registro_de_preco.html">11.1. Inserir Ata de Registro de Preço</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/retificar_ata_de_registro_de_preco.html">11.2. Retificar Ata de Registro de Preço</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/retificar_parcialmente_ata_de_registro_de_preco.html">11.3. Retificar Parcialmente Ata de Registro de Preço</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/excluir_ata_de_registro_de_preco.html">11.4. Excluir Ata de Registro de Preço</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_atas_de_registro_de_preco_por_compra.html">11.5. Consultar Atas de Registro de preço por Compra</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_ata_de_registro_de_preco.html">11.6. Consultar Ata de Registro de Preço</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/inserir_documento_de_uma_ata_de_registro_de_preco.html">11.7. Inserir Documento de uma Ata de Registro de Preço</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/excluir_documento_de_uma_ata_de_registro_de_preco.html">11.8. Excluir Documento de uma Ata de Registro de Preço</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_todos_os_documentos_de_uma_ata_de_registro_de_preco.html">11.9. Consultar todos os Documentos de uma Ata de Registro de Preço</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_documento_de_uma_ata_de_registro_de_preco.html">11.10. Consultar Documento de uma Ata de Registro de Preço</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_historico_da_ata_de_registro_de_preco.html">11.11. Consultar Histórico da Ata de Registro de Preço</a></li>
+<li class="toctree-l2 current" aria-expanded="true"><a class="reference internal current" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.html#" aria-expanded="true"><button class="toctree-expand" title="Open/close menu"></button>11.12. Consultar Contratos de Ata de Registro de Preço</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.html#detalhes-da-requisicao">11.12.1. Detalhes da Requisição</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.html#exemplo-de-payload">11.12.2. Exemplo de Payload</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.html#exemplo-requisicao-curl">11.12.3. Exemplo Requisição (cURL)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.html#dados-de-entrada">11.12.4. Dados de entrada</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.html#dados-de-retorno">11.12.5. Dados de retorno</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.html#codigos-de-retorno">11.12.6. Códigos de Retorno</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/inserir_parte_envolvida_na_ata_de_registro_de_preco.html">11.13. Inserir Parte Envolvida na Ata de Registro de Preço</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/excluir_parte_envolvida_em_ata_de_registro_de_preco.html">11.14. Excluir Parte Envolvida em Ata de Registro de Preço</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_parte_envolvida_em_ata_de_registro_de_preco.html">11.15. Consultar Parte Envolvida em Ata de Registro de Preço</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_partes_envolvidas_em_ata_de_registro_de_preco.html">11.16. Consultar Partes Envolvidas em Ata de Registro de Preço</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_dados_de_todos_os_documentos_de_uma_ata_de_registro_de_preco.html">11.17. Consultar dados de todos os documentos de uma Ata de Registro de Preço</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_quantidade_de_historico_de_ata_de_registro_de_preco.html">11.18. Consultar quantidade de histórico de Ata de Registro de Preço</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/baixar_arquivo_documento_de_ata_de_registro_de_preco.html">11.19. Baixar arquivo/documento de Ata de Registro de Preço</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_quantidade_de_documentos_de_ata_de_registro_de_precos.html">11.20. Consultar quantidade de documentos de Ata de Registro de Preços</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/baixar_arquivo_documento_excluido_de_ata_de_registro_de_preco.html">11.21. Baixar arquivo/documento excluído de Ata de Registro de Preço</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/contrato_empenho/index.html">12. Contratos/Empenhos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/empenho/index.html">13. Empenho</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/orgao_entidade/index.html">14. Órgão/Entidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://pncp.gov.br/manual/pt-br/latest/suporte/index.html">15. Suporte</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="https://pncp.gov.br/manual/pt-br/latest/index.html">Manual de Integração do PNCP</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="https://pncp.gov.br/manual/pt-br/latest/index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/index.html"><span class="section-number">11. </span>Atas de Registro de Preço</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">11.12. </span>Consultar Contratos de Ata de Registro de Preço</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="https://pncp.gov.br/manual/pt-br/latest/_sources/ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
+      </li>
+  </ul>
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="consultar-contratos-de-ata-de-registro-de-preco">
+<h1><span class="section-number">11.12. </span>Consultar Contratos de Ata de Registro de Preço<a class="headerlink" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.html#consultar-contratos-de-ata-de-registro-de-preco" title="Link permanente para este cabeçalho"></a></h1>
+<p>Serviço que permite consultar todos os contratos/empenhos vinculados a uma ata de registro de preço específica.</p>
+<section id="detalhes-da-requisicao">
+<h2><span class="section-number">11.12.1. </span>Detalhes da Requisição<a class="headerlink" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.html#detalhes-da-requisicao" title="Link permanente para este cabeçalho"></a></h2>
+<div class="wy-table-responsive"><table class="docutils align-default" style="width: 100%">
+<colgroup>
+<col style="width: 77%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Endpoint</p></th>
+<th class="head"><p>Método HTTP</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">/v1/orgaos/{cnpj}/compras/{ano}/{sequencial}/atas/{sequencialAta}/contratos</span></p></td>
+<td><p><span class="destaque-amarelo-claro">GET</span></p></td>
+</tr>
+</tbody>
+</table></div>
+</section>
+<section id="exemplo-de-payload">
+<h2><span class="section-number">11.12.2. </span>Exemplo de Payload<a class="headerlink" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.html#exemplo-de-payload" title="Link permanente para este cabeçalho"></a></h2>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos">1</span>      Não se aplica
+</span></pre></div>
+</div>
+</section>
+<section id="exemplo-requisicao-curl">
+<h2><span class="section-number">11.12.3. </span>Exemplo Requisição (cURL)<a class="headerlink" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.html#exemplo-requisicao-curl" title="Link permanente para este cabeçalho"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos">1</span><span class="w">     </span>curl<span class="w"> </span>-k<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span><span class="se">\</span>
+</span><span class="hll"><span class="linenos">2</span><span class="w">       </span><span class="s2">"</span><span class="si">${</span><span class="nv">BASE_URL</span><span class="si">}</span><span class="s2">/v1/orgaos/10000000000003/compras/2021/1/atas/1/contratos"</span><span class="w"> </span><span class="se">\</span>
+</span><span class="hll"><span class="linenos">3</span><span class="w">       </span>-H<span class="w"> </span><span class="s2">"Accept: */*"</span>
+</span></pre></div>
+</div>
+</section>
+<section id="dados-de-entrada">
+<h2><span class="section-number">11.12.4. </span>Dados de entrada<a class="headerlink" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.html#dados-de-entrada" title="Link permanente para este cabeçalho"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><span class="destaque-amarelo-claro">Alimentar os parâmetros {cnpj}, {ano}, {sequencial} e {sequencialAta} na URL.</span></p>
+</div>
+<div class="wy-table-responsive"><table class="quebra-linha-dois-ultima docutils align-default" style="width: 100%">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 23%">
+<col style="width: 9%">
+<col style="width: 14%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Id</p></th>
+<th class="head"><p>Campo</p></th>
+<th class="head"><p>Tipo</p></th>
+<th class="head"><p>Obrigatório</p></th>
+<th class="head"><p>Descrição</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">1</span></p></td>
+<td><p><span class="destaque-amarelo-claro">cnpj</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Texto (14)</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Sim</span></p></td>
+<td><p><span class="destaque-amarelo-claro">CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-amarelo-claro">2</span></p></td>
+<td><p><span class="destaque-amarelo-claro">ano</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Inteiro</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Sim</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Ano da contratação</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">3</span></p></td>
+<td><p><span class="destaque-amarelo-claro">sequencial</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Inteiro</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Sim</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Sequencial da contratação no PNCP</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-amarelo-claro">4</span></p></td>
+<td><p><span class="destaque-amarelo-claro">sequencialAta</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Inteiro</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Sim</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Sequencial da Ata no PNCP</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">5</span></p></td>
+<td><p><span class="destaque-amarelo-claro">pagina</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Inteiro</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Não</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Utilizado para paginação dos itens. Número da página</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-amarelo-claro">6</span></p></td>
+<td><p><span class="destaque-amarelo-claro">tamanhoPagina</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Inteiro</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Não</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Utilizado para paginação dos itens. Quantidade de itens por página</span></p></td>
+</tr>
+</tbody>
+</table></div>
+</section>
+<section id="dados-de-retorno">
+<h2><span class="section-number">11.12.5. </span>Dados de retorno<a class="headerlink" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.html#dados-de-retorno" title="Link permanente para este cabeçalho"></a></h2>
+<div class="wy-table-responsive"><table class="quebra-linha-dois-ultima docutils align-default" style="width: 100%">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 25%">
+<col style="width: 15%">
+<col style="width: 55%">
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Id</p></th>
+<th class="head"><p>Campo</p></th>
+<th class="head"><p>Tipo</p></th>
+<th class="head"><p>Descrição</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">1</span></p></td>
+<td><p><span class="destaque-amarelo-claro">data</span></p></td>
+<td></td>
+<td><p><span class="destaque-amarelo-claro">Dados retornados pela consulta</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-amarelo-claro">1.1</span></p></td>
+<td><p><span class="destaque-amarelo-claro">numeroControle</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Texto</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Número de controle PNCP do contrato/empenho (id contrato PNCP)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">1.2</span></p></td>
+<td><p><span class="destaque-amarelo-claro">sequencialContrato</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Inteiro</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento que o contrato/empenho foi inserido no PNCP</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-amarelo-claro">1.3</span></p></td>
+<td><p><span class="destaque-amarelo-claro">frutoAdesao</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Booleano</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Indicador se o contrato/empenho é de um não participante, ou seja, fruto da adesão a uma ata de registro de preço (False = Não / True = Sim)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">1.4</span></p></td>
+<td><p><span class="destaque-amarelo-claro">orgaoEntidade</span></p></td>
+<td></td>
+<td><p><span class="destaque-amarelo-claro">Dados do órgão/entidade do contrato/empenho</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-amarelo-claro">1.4.1</span></p></td>
+<td><p><span class="destaque-amarelo-claro">cnpj</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Texto</span></p></td>
+<td><p><span class="destaque-amarelo-claro">CNPJ do órgão/entidade</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">1.4.2</span></p></td>
+<td><p><span class="destaque-amarelo-claro">nome</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Texto</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Nome do órgão/entidade</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-amarelo-claro">1.5</span></p></td>
+<td><p><span class="destaque-amarelo-claro">unidadeExecutora</span></p></td>
+<td></td>
+<td><p><span class="destaque-amarelo-claro">Dados da Unidade Administrativa</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">1.5.1</span></p></td>
+<td><p><span class="destaque-amarelo-claro">codigo</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Texto</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Código da Unidade Administrativa</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-amarelo-claro">1.5.2</span></p></td>
+<td><p><span class="destaque-amarelo-claro">nomeUnidade</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Texto</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Nome da Unidade Administrativa</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">1.5.3</span></p></td>
+<td><p><span class="destaque-amarelo-claro">localidade</span></p></td>
+<td></td>
+<td><p><span class="destaque-amarelo-claro">Localidade da Unidade Administrativa</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-amarelo-claro">1.5.3.1</span></p></td>
+<td><p><span class="destaque-amarelo-claro">uf</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Texto</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Unidade Federativa</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">1.5.3.2</span></p></td>
+<td><p><span class="destaque-amarelo-claro">codigoIbgeMunicipio</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Texto</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Código IBGE do Município</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-amarelo-claro">1.5.3.3</span></p></td>
+<td><p><span class="destaque-amarelo-claro">nomeMunicipio</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Texto</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Nome do Município</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">1.6</span></p></td>
+<td><p><span class="destaque-amarelo-claro">numeroContratoEmpenho</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Texto</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Número do contrato/empenho</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-amarelo-claro">1.7</span></p></td>
+<td><p><span class="destaque-amarelo-claro">anoContrato</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Inteiro</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Ano do contrato/empenho</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">1.8</span></p></td>
+<td><p><span class="destaque-amarelo-claro">objetoContrato</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Texto</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Descrição do objeto do contrato/empenho</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-amarelo-claro">1.9</span></p></td>
+<td><p><span class="destaque-amarelo-claro">dataAssinatura</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Data</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Data da assinatura</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">1.10</span></p></td>
+<td><p><span class="destaque-amarelo-claro">dataVigenciaInicio</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Data</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Data inicial de vigência</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-amarelo-claro">1.11</span></p></td>
+<td><p><span class="destaque-amarelo-claro">dataVigenciaFim</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Data</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Data final de vigência</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">1.12</span></p></td>
+<td><p><span class="destaque-amarelo-claro">valorGlobal</span></p></td>
+<td></td>
+<td><p><span class="destaque-amarelo-claro">Valor global do contrato/empenho</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-amarelo-claro">1.13</span></p></td>
+<td><p><span class="destaque-amarelo-claro">dataPublicacaoPncp</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Data/Hora</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Data e hora da inclusão no PNCP</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">1.14</span></p></td>
+<td><p><span class="destaque-amarelo-claro">usuarioNome</span></p></td>
+<td><p><span class="destaque-amarelo-claro">String</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Nome do usuário/sistema que efetuou a operação</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-amarelo-claro">2</span></p></td>
+<td><p><span class="destaque-amarelo-claro">totalRegistros</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Inteiro</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Total de registros de contratos/empenhos encontrados</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">3</span></p></td>
+<td><p><span class="destaque-amarelo-claro">totalPaginas</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Inteiro</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Total de páginas</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-amarelo-claro">4</span></p></td>
+<td><p><span class="destaque-amarelo-claro">numeroPagina</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Inteiro</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Número da página consultada</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">5</span></p></td>
+<td><p><span class="destaque-amarelo-claro">paginasRestantes</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Inteiro</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Quantidade de páginas restantes</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-amarelo-claro">6</span></p></td>
+<td><p><span class="destaque-amarelo-claro">emendaParlamentar</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Booleano</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Marcador de emenda parlamentar na contratação</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">7</span></p></td>
+<td><p><span class="destaque-amarelo-claro">temRemanejamento</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Booleano</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Indicador de remanejamento (False = Não / True = Sim). O remanejamento permite a transferência de saldos entre órgãos participantes ou não participantes (caronas), mediante autorização do órgão gerenciador e anuência do fornecedor</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-amarelo-claro">8</span></p></td>
+<td><p><span class="destaque-amarelo-claro">empty</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Booleano</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Indica se o retorno está vazio</span></p></td>
+</tr>
+</tbody>
+</table></div>
+</section>
+<section id="codigos-de-retorno">
+<h2><span class="section-number">11.12.6. </span>Códigos de Retorno<a class="headerlink" href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.html#codigos-de-retorno" title="Link permanente para este cabeçalho"></a></h2>
+<div class="wy-table-responsive"><table class="docutils align-default" style="width: 100%">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 42%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Código HTTP</p></th>
+<th class="head"><p>Mensagem</p></th>
+<th class="head"><p>Tipo</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">200</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Ok</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Sucesso</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-amarelo-claro">400</span></p></td>
+<td><p><span class="destaque-amarelo-claro">BadRequest</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Erro</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="destaque-amarelo-claro">422</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Unprocessable Entity</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Erro</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="destaque-amarelo-claro">500</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Internal Server Error</span></p></td>
+<td><p><span class="destaque-amarelo-claro">Erro</span></p></td>
+</tr>
+</tbody>
+</table></div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/consultar_historico_da_ata_de_registro_de_preco.html" class="btn btn-neutral float-left" title="11.11. Consultar Histórico da Ata de Registro de Preço" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="https://pncp.gov.br/manual/pt-br/latest/ata_de_registro_de_preco/inserir_parte_envolvida_na_ata_de_registro_de_preco.html" class="btn btn-neutral float-right" title="11.13. Inserir Parte Envolvida na Ata de Registro de Preço" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr>
+
+  <div role="contentinfo">
+    <p>© Direitos autorais 2026, Ministério da Gestão e Inovação em Serviços Públicos - MGI.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org/">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+
+</body></html>

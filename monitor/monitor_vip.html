@@ -1,0 +1,134 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VIP | GSB Monitor</title>
+  <link rel="stylesheet" href="./assets/vip_monitor.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="emblem"></div>
+        <h1>GSB Monitor</h1>
+        <span>VIP</span>
+      </div>
+
+      <nav class="nav">
+        <a class="active" href="#"><span class="nav-icon">⌂</span>Painel Executivo</a>
+        <a href="#"><span class="nav-icon">▦</span>Matriz de Eventos</a>
+        <a href="./roadmap.html"><span class="nav-icon">◷</span>Cronograma Executivo</a>
+        <a href="#"><span class="nav-icon">◇</span>Oportunidades</a>
+        <a href="#"><span class="nav-icon">◉</span>Monitoramento</a>
+        <a href="#"><span class="nav-icon">▧</span>Análises & Insights</a>
+        <a href="#"><span class="nav-icon">⌁</span>Mapas de Atuação</a>
+        <a href="#"><span class="nav-icon">◌</span>Alertas & Notificações</a>
+        <a href="#"><span class="nav-icon">☷</span>Relatórios</a>
+        <a href="#"><span class="nav-icon">⌘</span>Integrações</a>
+        <a href="#"><span class="nav-icon">⚙</span>Configurações</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        VF<br>
+        INTELLIGENCE PLATFORM<br>
+        VIP
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <section class="title">
+          <h2 id="brand-title">VIP | GSB Monitor</h2>
+          <p id="brand-subtitle">Inteligência de Contratações Públicas & Seguro Garantia</p>
+        </section>
+
+        <div class="search">⌕&nbsp;&nbsp;Buscar oportunidades, órgãos, eventos...</div>
+
+        <div class="userbox">
+          <div>
+            <strong>Ana Fonseca</strong><br>
+            <small>Administrador VIP</small>
+          </div>
+          <div class="avatar">AF</div>
+        </div>
+      </header>
+
+      <section class="kpis" id="kpis"></section>
+
+      <section class="grid">
+        <div>
+          <section class="card panel">
+            <h3 class="panel-title">Matriz de eventos & fluxo de monitoramento</h3>
+            <div class="queue-grid" id="queues"></div>
+
+            <div class="timeline">
+              <h3 class="panel-title">Pipeline completo de eventos</h3>
+              <div class="event-strip" id="events"></div>
+            </div>
+          </section>
+
+          <section class="card panel table-panel">
+            <h3 class="panel-title">Oportunidades em monitoramento</h3>
+            <div class="table-scroll">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Órgão / Entidade</th>
+                    <th>Processo</th>
+                    <th>Fornecedor / Tomador</th>
+                    <th>CNPJ</th>
+                    <th>Objeto</th>
+                    <th>Modalidade</th>
+                    <th>Homologação</th>
+                    <th>Evento</th>
+                    <th>Status</th>
+                    <th>Valor</th>
+                    <th>Rota</th>
+                    <th>Atualizado em</th>
+                  </tr>
+                </thead>
+                <tbody id="opportunities"></tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+        <aside class="side">
+          <section class="card panel">
+            <h3 class="panel-title">Insights inteligentes</h3>
+            <div class="insight-network">
+              <div id="insight-left"></div>
+              <div class="mini-emblem">GB</div>
+              <div id="insight-right"></div>
+            </div>
+          </section>
+
+          <section class="card panel map">
+            <h3 class="panel-title">Oportunidades monitoradas por órgão</h3>
+            <div class="map-shape"></div>
+            <div class="map-stats">
+              <div><strong>1.248</strong><span>Órgãos</span></div>
+              <div><strong>27</strong><span>Estados</span></div>
+              <div><strong>4.782</strong><span>Oportunidades</span></div>
+            </div>
+          </section>
+        </aside>
+      </section>
+
+      <footer class="footer">
+        <div class="motto">
+          Inteligência que protege. Dados que decidem. Oportunidades que transformam.
+        </div>
+        <div class="signature">
+          <strong id="signature-name">Ana Fonseca</strong>
+          <span id="signature-message">"...sabes muito bem tudo o que faço"</span>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="./assets/vip_monitor.js"></script>
+</body>
+</html>
+

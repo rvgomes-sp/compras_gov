@@ -1,6 +1,8 @@
 param(
     [string]$Root = (Split-Path -Parent $PSScriptRoot),
-    [string]$CandidateCsv = "",
+    [Parameter(Mandatory=$true)]
+    [ValidateNotNullOrEmpty()]
+    [string]$CandidateCsv,
     [string]$ExecutionConfig = "",
     [switch]$Reiniciar
 )
@@ -8,7 +10,6 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
-if (-not $CandidateCsv) { $CandidateCsv = Join-Path $Root "data\candidatos\candidatos_evt007.csv" }
 if (-not $ExecutionConfig) { $ExecutionConfig = Join-Path $Root "config\execucao\teste_d1.json" }
 $apiConfigPath = Join-Path $Root "config\api\evt007_manual_2_5.json"
 
