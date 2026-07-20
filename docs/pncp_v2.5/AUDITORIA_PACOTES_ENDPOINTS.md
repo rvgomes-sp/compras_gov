@@ -36,7 +36,15 @@ O Manual PNCP v. 2.5 completo e o OpenAPI integral também permanecem versionado
 
 ## Efeito sobre a descoberta do EVT007
 
-A auditoria não encontrou documentação adicional que altere o bloqueio técnico existente: o material local não apresenta endpoint que enumere nacionalmente resultados de itens por `dataResultado` ou por `dataInclusao` do resultado.
+A auditoria continua correta quanto ao seu escopo: o Manual PNCP 2.5 e seus endpoints de integração não apresentam operação nacional que enumere resultados por período.
+
+Posteriormente foi identificada, fora do Manual PNCP 2.5 e dentro do serviço oficial de Dados Abertos do Compras.gov, a operação `Consultar resultado de itens de contratações`:
+
+```text
+GET https://dadosabertos.compras.gov.br/modulo-contratacoes/3_consultarResultadoItensContratacoes_PNCP_14133
+```
+
+Essa fonte aceita `dataResultadoPncpInicial` e `dataResultadoPncpFinal` e resolve exclusivamente a etapa de descoberta. O retorno deve ser preservado e convertido em `cnpj;ano;sequencial`; a confirmação do evento, de `dataInclusao`, da origem Compras.gov, do objeto e das regras comerciais permanece nos endpoints do núcleo PNCP 2.5.
 
 É necessário distinguir as chaves por estágio:
 
@@ -52,5 +60,6 @@ Nenhuma dessas chaves comprova, isoladamente, que o registro pertence ao D-1, qu
 
 - Manter fora do controle de versão os três ZIPs e seus ativos `_files`.
 - Manter as páginas HTML já organizadas em `endpoints/compras/` e `endpoints/atas/`.
-- Preservar o bloqueio de execução quando não houver fonte externa autorizada e auditável para formar a amostra limpa.
+- Usar o Dados Abertos Compras.gov como fonte oficial e auditável de descoberta, sem confundi-lo com o Manual PNCP 2.5.
+- Preservar o bloqueio entre descoberta e coleta: arquivo parcial não aciona o núcleo.
 - Não substituir `dataResultado` por `dataPublicacaoPncp`, `dataAtualizacao` ou qualquer outra data.
