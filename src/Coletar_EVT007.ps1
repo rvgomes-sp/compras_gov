@@ -276,7 +276,8 @@ try {
 
             $contratacao = Invoke-ApiJson -Uri $uriContratacao
             $modalidadeId = [int]$contratacao.modalidadeId
-            if (-not (@($exec.modalidadeIdPermitida) -contains $modalidadeId) -or (@($exec.modalidadeIdExcluida) -contains $modalidadeId)) {
+            $filtrarModalidade = ($null -ne $exec.PSObject.Properties['filtrarModalidade']) -and [bool]$exec.filtrarModalidade
+            if ($filtrarModalidade -and (-not (@($exec.modalidadeIdPermitida) -contains $modalidadeId) -or (@($exec.modalidadeIdExcluida) -contains $modalidadeId))) {
                 $contadores.modalidadesExcluidas++
                 $caseAudit.status = 'MODALIDADE_EXCLUIDA'
                 $completed[$candidateKey] = $true
