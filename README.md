@@ -52,6 +52,15 @@ cnpj;ano;sequencial
 
 A presença desses identificadores apenas habilita a consulta. Ela não comprova homologação, D-1, origem Compras.gov nem qualificação comercial.
 
+## Modalidades e catálogo comercial
+
+- O EVT007 não exclui nenhuma modalidade. A modalidade 6 — Pregão Eletrônico — permanece integralmente no fluxo.
+- A antiga exclusão da modalidade 6 era apenas uma contenção do endpoint anterior após HTTP 429 e não é regra de negócio.
+- O catálogo de serviços usa o CATSER oficial informado como atualizado em 18/07/2026, com 3.095 códigos: 3.013 ativos e 82 inativos.
+- Os campos e nomes oficiais do CATSER são preservados; as decisões comerciais ficam em colunas `gsb*`, separadas.
+- CATMAT e CATSER não são misturados. Materiais recebem `CATMAT_NAO_APLICAVEL` na qualificação por serviços.
+- Somente códigos expressamente classificados como `APROVADO` entram diretamente pelo catálogo. Revisões exigem leitura do objeto.
+
 ## Fluxo do EVT007
 
 1. Enumerar resultados de itens pelo Dados Abertos com `dataResultadoPncpInicial = dataResultadoPncpFinal = D-1`.
@@ -81,11 +90,12 @@ Não execute o motor sem uma amostra limpa identificada e autorizada.
 - `src/Descobrir_EVT007_D1.ps1`: descoberta nacional controlada no Dados Abertos Compras.gov.
 - `src/Qualificar_EVT007.ps1`: qualificação comercial posterior à coleta.
 - `config/api/`: contrato de endpoints e campos do Manual 2.5.
-- `config/comercial/`: catálogo e regras comerciais.
-- `config/execucao/`: janela, modalidades e controles da rodada.
+- `config/comercial/`: CATSER classificado, catálogo de execução e regras comerciais.
+- `config/execucao/`: janela e controles da rodada; filtro de modalidade desativado.
 - `tests/`: validações contra janelas indevidas e herança do V2.
 - `monitor/`: interface do monitor, sem feeds ou dados antigos.
 - `docs/pncp_v2.5/`: Manual 2.5, OpenAPI e referências de endpoints.
+- `docs/catalogo_compras_gov/`: fontes oficiais de catálogo, cobertura e planilha de conferência.
 
 ## Saídas locais
 
