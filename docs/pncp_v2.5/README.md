@@ -10,8 +10,10 @@ Esta pasta contém somente fontes locais usadas na construção e auditoria do G
 - `endpoints/atas/`: páginas disponíveis sobre atas, contratos, partes envolvidas e documentos.
 - `endpoints/orgaos/`: páginas disponíveis para inclusão, atualização e consulta de órgão.
 - `recomendacoes/`: recomendações iniciais do Manual 2.5.
+- `AUDITORIA_PACOTES_ENDPOINTS.md`: inventário dos três pacotes locais, conferência por hash e decisão sobre os arquivos excluídos.
 
 Os arquivos chamados `_files` nos pacotes originais eram cópias repetidas de CSS e JavaScript do site de documentação. Eles não representam endpoints e foram deliberadamente excluídos.
 
-Nenhuma consulta à internet é necessária para auditar os nomes de campos utilizados pelo motor.
+Os sete arquivos HTML substantivos presentes nos pacotes foram conferidos e já estão versionados em `endpoints/compras/` e `endpoints/atas/`. A auditoria não identificou endpoint adicional capaz de descobrir resultados por `dataResultado` ou por `dataInclusao` do resultado.
 
+Nenhuma consulta à internet é necessária para auditar os nomes de campos utilizados pelo motor.
