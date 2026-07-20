@@ -17,9 +17,8 @@ Fonte institucional informada: `https://dadosabertos.compras.gov.br/`.
 - As colunas iniciadas por `gsb` são classificações internas, auditáveis e alteráveis sem renomear a fonte oficial.
 - `config/comercial/tabela_servicos_20260718.csv` conserva os 3.095 registros e a decisão inicial de cada código.
 - `config/comercial/catalogo_servicos.json` é a visão compacta consumida pelo qualificador.
-- A planilha `GSB_EVT007_Tabela_Servicos_CATSER_20260718.xlsx` permite conferir a seleção, a mão de obra terceirizada, o catálogo completo e as fontes.
+- A planilha `GSB_EVT007_Tabela_Servicos_CATSER_20260718.xlsx`, distribuída no pacote de atualização, permite conferir a seleção, a mão de obra terceirizada, o catálogo completo e as fontes.
 
 ## Regra de segurança
 
 Somente registros `APROVADO` e com `gsbAtivoMotor=True` são promovidos diretamente pelo código. Registros em revisão exigem leitura do objeto e nunca são aprovados apenas por pertencerem a um grupo amplo.
-
