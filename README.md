@@ -69,7 +69,7 @@ A presença desses identificadores apenas habilita a consulta. Ela não comprova
 
 ```powershell
 Set-ExecutionPolicy -Scope Process Bypass
-cd C:\GSB\monitor_v2\monitor_v2.5
+cd C:\GSB\monitor_v2\monitor_v2.5_atual
 .\Executar_EVT007_D1.ps1 -CandidateCsv "C:\caminho\amostra_limpa.csv"
 ```
 
