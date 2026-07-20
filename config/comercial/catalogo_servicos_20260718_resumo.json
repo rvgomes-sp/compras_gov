@@ -1,0 +1,22 @@
+{
+  "catalogo": "CATSER",
+  "referenciaInformadaPeloUsuario": "2026-07-18",
+  "arquivoFonte": "docs/catalogo_compras_gov/fontes/catser_20260718.csv",
+  "sha256": "f3cd884220115be97fd7782a25e799d8c64390786794d27c3fef53806e67f264",
+  "registros": 3095,
+  "servicosAtivos": 3013,
+  "servicosInativos": 82,
+  "grupos": 119,
+  "classes": 197,
+  "statusGsb": {
+    "NAO_CLASSIFICADO": 2361,
+    "INATIVO_CATSER": 82,
+    "REVISAO_SEGMENTO": 485,
+    "APROVADO": 81,
+    "NAO_PRIORITARIO": 2,
+    "REVISAO_MAO_DE_OBRA": 81,
+    "REVISAO_DIVERGENCIA_STATUS": 3
+  },
+  "ativosMotor": 81,
+  "registrosRuntime": 164
+}
