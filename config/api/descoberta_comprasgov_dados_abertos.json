@@ -1,0 +1,37 @@
+{
+  "nome": "Descoberta_EVT007_ComprasGov_Dados_Abertos",
+  "fonte": "COMPRASGOV_DADOS_ABERTOS",
+  "baseUrl": "https://dadosabertos.compras.gov.br",
+  "endpoint": "/modulo-contratacoes/3_consultarResultadoItensContratacoes_PNCP_14133",
+  "parametrosTemporais": {
+    "inicial": "dataResultadoPncpInicial",
+    "final": "dataResultadoPncpFinal"
+  },
+  "parametrosPaginacao": {
+    "pagina": "pagina",
+    "tamanhoPagina": "tamanhoPagina",
+    "tamanhoPaginaMaximo": 500
+  },
+  "camposResposta": [
+    "resultado",
+    "totalRegistros",
+    "totalPaginas",
+    "paginasRestantes"
+  ],
+  "camposResultado": [
+    "numeroControlePNCPCompra",
+    "numeroItemPncp",
+    "sequencialResultado",
+    "dataResultadoPncp",
+    "dataInclusaoPncp",
+    "niFornecedor",
+    "nomeRazaoSocialFornecedor",
+    "valorTotalHomologado"
+  ],
+  "chaveSaida": [
+    "cnpj",
+    "ano",
+    "sequencial"
+  ],
+  "observacao": "Fonte oficial de descoberta. A confirmacao factual e comercial permanece nos endpoints PNCP 2.5 configurados para o EVT007."
+}
