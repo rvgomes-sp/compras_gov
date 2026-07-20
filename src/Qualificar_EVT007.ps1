@@ -105,16 +105,19 @@ foreach ($grupo in ($registros | Group-Object { [string]$_.contratacao.numeroCon
 
     foreach ($linha in $linhas) {
         $codigoCatalogo = [string]$linha.item.catalogoCodigoItem
-        $catalogEntry = if ($catalogMap.ContainsKey($codigoCatalogo)) { $catalogMap[$codigoCatalogo] } else { $null }
-        $catalogStatus = if ($null -ne $catalogEntry) { [string]$catalogEntry.status } else { 'NAO_LOCALIZADO' }
+        $materialOuServico = [string]$linha.item.materialOuServico
+        $materialOuServicoNome = [string]$linha.item.materialOuServicoNome
+        $ehServicoCatser = ($materialOuServico -eq 'S') -or ((Convert-ToSearchText -Text $materialOuServicoNome).Contains('servico'))
+        $catalogEntry = if ($ehServicoCatser -and $catalogMap.ContainsKey($codigoCatalogo)) { $catalogMap[$codigoCatalogo] } else { $null }
+        $catalogStatus = if (-not $ehServicoCatser) { 'CATMAT_NAO_APLICAVEL' } elseif ($null -ne $catalogEntry) { [string]$catalogEntry.status } else { 'NAO_LOCALIZADO' }
         $textoObjeto = @(
             [string]$linha.contratacao.objetoCompra,
             [string]$linha.contratacao.informacaoComplementar,
             [string]$linha.item.descricao,
             [string]$linha.item.informacaoComplementar
         ) -join ' '
-        $maoDeObra = Test-MaoDeObraDedicada -Texto $textoObjeto
-        $objetoAprovado = ($catalogStatus -eq 'APROVADO') -or $maoDeObra
+        $maoDeObra = $ehServicoCatser -and (Test-MaoDeObraDedicada -Texto $textoObjeto)
+        $objetoAprovado = $ehServicoCatser -and (($catalogStatus -eq 'APROVADO') -or $maoDeObra)
         $valorItem = if ($itemTotals.ContainsKey([string]$linha.item.numeroItem)) { [decimal]$itemTotals[[string]$linha.item.numeroItem] } else { [decimal]$linha.resultado.valorTotalHomologado }
 
         $qualificado = $objetoAprovado -and $rota -and ($valorItem -ge [decimal]$rules.valorMinimo)
@@ -140,8 +143,8 @@ foreach ($grupo in ($registros | Group-Object { [string]$_.contratacao.numeroCon
             numeroItem = $linha.resultado.numeroItem
             sequencialResultado = $linha.resultado.sequencialResultado
             descricao = [string]$linha.item.descricao
-            materialOuServico = [string]$linha.item.materialOuServico
-            materialOuServicoNome = [string]$linha.item.materialOuServicoNome
+            materialOuServico = $materialOuServico
+            materialOuServicoNome = $materialOuServicoNome
             itemCategoriaId = $linha.item.itemCategoriaId
             itemCategoriaNome = [string]$linha.item.itemCategoriaNome
             ncmNbsCodigo = [string]$linha.item.ncmNbsCodigo
@@ -164,7 +167,15 @@ foreach ($grupo in ($registros | Group-Object { [string]$_.contratacao.numeroCon
             usuarioNome = [string]$linha.historico.usuarioNome
             gsbValorTotalHomologadoContratacao = $valorContratacao
             gsbValorTotalHomologadoItem = $valorItem
+            gsbEhServicoCatser = $ehServicoCatser
             gsbCatalogoStatus = $catalogStatus
+            gsbCatalogoNome = if ($null -ne $catalogEntry) { [string]$catalogEntry.nome } else { '' }
+            gsbCatalogoCodigoGrupo = if ($null -ne $catalogEntry) { [string]$catalogEntry.codigoGrupo } else { '' }
+            gsbCatalogoNomeGrupo = if ($null -ne $catalogEntry) { [string]$catalogEntry.nomeGrupo } else { '' }
+            gsbCatalogoCodigoClasse = if ($null -ne $catalogEntry) { [string]$catalogEntry.codigoClasse } else { '' }
+            gsbCatalogoNomeClasse = if ($null -ne $catalogEntry) { [string]$catalogEntry.nomeClasse } else { '' }
+            gsbCatalogoEixoComercial = if ($null -ne $catalogEntry) { [string]$catalogEntry.eixoComercial } else { '' }
+            gsbCatalogoReferencia = if ($null -ne $catalogEntry) { [string]$catalogEntry.catalogoReferencia } else { '' }
             gsbMaoDeObraDedicada = $maoDeObra
             gsbRota = $rota
             gsbDecisaoContratacao = $decisaoContratacao
@@ -189,7 +200,9 @@ $colunas = @(
     'niFornecedor','nomeRazaoSocialFornecedor','quantidadeHomologada','valorUnitarioHomologado',
     'valorTotalHomologado','situacaoCompraItemResultadoId','situacaoCompraItemResultadoNome',
     'logManutencaoDataInclusao','tipoLogManutencao','categoriaLogManutencao','usuarioNome',
-    'gsbValorTotalHomologadoContratacao','gsbValorTotalHomologadoItem','gsbCatalogoStatus',
+    'gsbValorTotalHomologadoContratacao','gsbValorTotalHomologadoItem','gsbEhServicoCatser','gsbCatalogoStatus',
+    'gsbCatalogoNome','gsbCatalogoCodigoGrupo','gsbCatalogoNomeGrupo','gsbCatalogoCodigoClasse',
+    'gsbCatalogoNomeClasse','gsbCatalogoEixoComercial','gsbCatalogoReferencia',
     'gsbMaoDeObraDedicada','gsbRota','gsbDecisaoContratacao','gsbQualificado','gsbMotivo'
 )
 
