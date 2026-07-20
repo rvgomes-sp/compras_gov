@@ -21,8 +21,10 @@
 
 ## Modalidades do teste
 
-- Permitidas: 2, 4, 5, 7, 10, 16, 17, 18 e 19.
-- Excluída: 6 — Pregão Eletrônico.
+- Nenhuma modalidade é excluída na descoberta, na confirmação ou na qualificação do EVT007.
+- A antiga exclusão da modalidade 6 foi uma contenção técnica temporária para o endpoint anterior, após respostas HTTP 429; não constitui regra de negócio.
+- A modalidade 6 — Pregão Eletrônico — permanece no fluxo, inclusive por concentrar serviços com mão de obra terceirizada relevantes para a tese de cobertura trabalhista.
+- A modalidade é preservada no registro e na auditoria para análise, mas não funciona como filtro de entrada.
 
 ## Cortes e rotas
 
@@ -43,7 +45,11 @@
 ## Catálogo
 
 - Chave oficial: `catalogoCodigoItem`.
-- Status: `APROVADO`, `REVISAO_MAO_DE_OBRA`, `NAO_PRIORITARIO` ou `NAO_LOCALIZADO`.
+- Para itens com `materialOuServico = S`, a chave é confrontada exclusivamente com o CATSER oficial.
+- Materiais não são confrontados com códigos CATSER e recebem `CATMAT_NAO_APLICAVEL`.
+- Status de execução: `APROVADO`, `REVISAO_MAO_DE_OBRA`, `NAO_PRIORITARIO`, `NAO_LOCALIZADO` ou `CATMAT_NAO_APLICAVEL`.
+- A tabela integral também usa estados de governança que não promovem o item automaticamente: `REVISAO_SEGMENTO`, `NAO_CLASSIFICADO`, `INATIVO_CATSER` e `REVISAO_DIVERGENCIA_STATUS`.
 - Item não localizado nunca é aprovado automaticamente.
 - Palavras-chave auxiliam a tese comercial, mas não substituem o código oficial do catálogo.
-
+- O arquivo oficial CATSER informado como atualizado em 18/07/2026 possui 3.095 serviços, dos quais 3.013 ativos e 82 inativos.
+- Códigos e nomenclatura oficial permanecem intactos; os campos `gsb*` registram somente a decisão comercial interna.
