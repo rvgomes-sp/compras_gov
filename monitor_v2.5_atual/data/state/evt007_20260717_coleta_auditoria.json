@@ -1,0 +1,60 @@
+﻿{
+    "runName":  "evt007_20260717",
+    "updatedAt":  "2026-07-20T00:50:35.6651219-03:00",
+    "status":  "INTERRUPTED",
+    "counters":  {
+                     "candidatosInformados":  500,
+                     "candidatosConcluidos":  0,
+                     "modalidadesExcluidas":  0,
+                     "itensConsultados":  0,
+                     "resultadosConsultados":  0,
+                     "resultadosDataResultado":  0,
+                     "resultadosFonteComprasGov":  0,
+                     "resultadosSemFonteConfirmada":  0,
+                     "resultadosSemDataInclusao":  0,
+                     "resultadosSemLogManutencaoDataInclusao":  0,
+                     "resultadosCancelados":  0,
+                     "falhas":  3
+                 },
+    "candidates":  [
+                       {
+                           "cnpj":  "00038166000105",
+                           "ano":  2026,
+                           "sequencial":  414,
+                           "startedAt":  "2026-07-20T00:50:35.3766851-03:00",
+                           "status":  "FAILED",
+                           "itens":  0,
+                           "resultados":  0,
+                           "resultadosD1":  0,
+                           "resultadosComprasGov":  0,
+                           "error":  "HTTP 301 permaneceu apos redirecionamento automatico e veio sem cabecalho Location: https://pncp.gov.br/api/pncp/v1/orgaos/00038166000105/compras/2026/414",
+                           "finishedAt":  "2026-07-20T00:50:35.5485604-03:00"
+                       },
+                       {
+                           "cnpj":  "00038174000143",
+                           "ano":  2026,
+                           "sequencial":  199,
+                           "startedAt":  "2026-07-20T00:50:35.5584528-03:00",
+                           "status":  "FAILED",
+                           "itens":  0,
+                           "resultados":  0,
+                           "resultadosD1":  0,
+                           "resultadosComprasGov":  0,
+                           "error":  "HTTP 301 permaneceu apos redirecionamento automatico e veio sem cabecalho Location: https://pncp.gov.br/api/pncp/v1/orgaos/00038174000143/compras/2026/199",
+                           "finishedAt":  "2026-07-20T00:50:35.5869074-03:00"
+                       },
+                       {
+                           "cnpj":  "00038174000143",
+                           "ano":  2026,
+                           "sequencial":  200,
+                           "startedAt":  "2026-07-20T00:50:35.6209168-03:00",
+                           "status":  "FAILED",
+                           "itens":  0,
+                           "resultados":  0,
+                           "resultadosD1":  0,
+                           "resultadosComprasGov":  0,
+                           "error":  "HTTP 301 permaneceu apos redirecionamento automatico e veio sem cabecalho Location: https://pncp.gov.br/api/pncp/v1/orgaos/00038174000143/compras/2026/200",
+                           "finishedAt":  "2026-07-20T00:50:35.6549713-03:00"
+                       }
+                   ]
+}

@@ -1,0 +1,167 @@
+﻿{
+    "runName":  "evt007_20260717",
+    "generatedAt":  "2026-07-20T09:32:45.7073133-03:00",
+    "fonte":  "COMPRASGOV_DADOS_ABERTOS",
+    "dataResultadoPncp":  "2026-07-17",
+    "coberturaDescoberta":  "COMPLETA",
+    "baseFactual":  true,
+    "baseComercial":  false,
+    "origemPlataforma":  "NAO_CONFIRMADA_NO_RESULTADO",
+    "statusEnriquecimentoItem":  "PENDENTE_ENRIQUECIMENTO_ITEM",
+    "classificacaoComercial":  "NAO_APLICADA",
+    "counters":  {
+                     "paginasLidas":  16,
+                     "registrosLidos":  7744,
+                     "registrosDataDivergente":  0,
+                     "registrosSemChave":  0,
+                     "registrosDuplicados":  768,
+                     "registrosSemFornecedor":  0,
+                     "registrosSemDataInclusaoPncp":  0,
+                     "registrosInclusaoAnteriorResultado":  3,
+                     "registrosCancelados":  4,
+                     "registrosFatuaisIntegrais":  6976,
+                     "registrosFatuaisUtilizaveis":  6972
+                 },
+    "contratacoesFatuais":  1022,
+    "fornecedoresFatuais":  1760,
+    "valorHomologadoResultadosFatuaisUtilizaveisD1":  1236445603.47720000,
+    "auditoriaDescoberta":  "C:\\GSB\\monitor_v2\\monitor_v2.5_atual\\data\\descoberta\\evt007_20260717\\auditoria.json",
+    "entradas":  [
+                     {
+                         "arquivo":  "pagina_00001.json",
+                         "sha256":  "e70b7a3a3554c472e1519df4414c4e7f5448249243a0f022e73a9715fb48c68e",
+                         "registros":  500,
+                         "totalRegistrosInformado":  7744,
+                         "totalPaginasInformado":  16
+                     },
+                     {
+                         "arquivo":  "pagina_00002.json",
+                         "sha256":  "02fccf484dbc136bf8a912edf6c9b5ddfd746309a67adc1d710d0a6c7dc33e1c",
+                         "registros":  500,
+                         "totalRegistrosInformado":  7744,
+                         "totalPaginasInformado":  16
+                     },
+                     {
+                         "arquivo":  "pagina_00003.json",
+                         "sha256":  "42656a9f43bf57b251078257e98900721aebb675f82a2fb9fe63ee9914ad08b9",
+                         "registros":  500,
+                         "totalRegistrosInformado":  7744,
+                         "totalPaginasInformado":  16
+                     },
+                     {
+                         "arquivo":  "pagina_00004.json",
+                         "sha256":  "6edcfb8d7b2580d0805ae42418c4b4a4beb244e6336b27c5e6b7e46a52bc521d",
+                         "registros":  500,
+                         "totalRegistrosInformado":  7744,
+                         "totalPaginasInformado":  16
+                     },
+                     {
+                         "arquivo":  "pagina_00005.json",
+                         "sha256":  "8af300337d3a87d4ec93faefec2e26b53740bb921a263a2c926e50f9e5490c74",
+                         "registros":  500,
+                         "totalRegistrosInformado":  7744,
+                         "totalPaginasInformado":  16
+                     },
+                     {
+                         "arquivo":  "pagina_00006.json",
+                         "sha256":  "24320afd13e3bbb7ec0c22bb372fe784e4bf86f6e14ac0fc449abad6f329340d",
+                         "registros":  500,
+                         "totalRegistrosInformado":  7744,
+                         "totalPaginasInformado":  16
+                     },
+                     {
+                         "arquivo":  "pagina_00007.json",
+                         "sha256":  "eabc7739b5bae8e392563112d1ebda8424e7af64f518ae5796791695cdf95279",
+                         "registros":  500,
+                         "totalRegistrosInformado":  7744,
+                         "totalPaginasInformado":  16
+                     },
+                     {
+                         "arquivo":  "pagina_00008.json",
+                         "sha256":  "d616bed632dcea61d894acc9f2ef168bdeeab55d2d2349acb58700edbe371313",
+                         "registros":  500,
+                         "totalRegistrosInformado":  7744,
+                         "totalPaginasInformado":  16
+                     },
+                     {
+                         "arquivo":  "pagina_00009.json",
+                         "sha256":  "f98b43754367934e2a5d7a401f517195786f96f14f6000e2582a5abe5fff60d2",
+                         "registros":  500,
+                         "totalRegistrosInformado":  7744,
+                         "totalPaginasInformado":  16
+                     },
+                     {
+                         "arquivo":  "pagina_00010.json",
+                         "sha256":  "1cce466cabd26fc3d6f1615929a0da187d32ab728a1fe9f746b71d21f3a9aeb9",
+                         "registros":  500,
+                         "totalRegistrosInformado":  7744,
+                         "totalPaginasInformado":  16
+                     },
+                     {
+                         "arquivo":  "pagina_00011.json",
+                         "sha256":  "ff7f4282a65e12bbca7f90e14b216435ea885502c1625b9819b4a3b1d6084a1b",
+                         "registros":  500,
+                         "totalRegistrosInformado":  7744,
+                         "totalPaginasInformado":  16
+                     },
+                     {
+                         "arquivo":  "pagina_00012.json",
+                         "sha256":  "7bed3a0c3610687b75cbb1508f993de0d249b9eb8379e5dbcfa13a6d5900768b",
+                         "registros":  500,
+                         "totalRegistrosInformado":  7744,
+                         "totalPaginasInformado":  16
+                     },
+                     {
+                         "arquivo":  "pagina_00013.json",
+                         "sha256":  "a09418485bbb4a153632384ab293068e73f8f934870d78167cc81465b5d79a46",
+                         "registros":  500,
+                         "totalRegistrosInformado":  7744,
+                         "totalPaginasInformado":  16
+                     },
+                     {
+                         "arquivo":  "pagina_00014.json",
+                         "sha256":  "39afedd09ece06dd3d48613b8d1eb1e88c3aa559bc588b27a4bf48385e918465",
+                         "registros":  500,
+                         "totalRegistrosInformado":  7744,
+                         "totalPaginasInformado":  16
+                     },
+                     {
+                         "arquivo":  "pagina_00015.json",
+                         "sha256":  "fdbdaba9ed24ae068ac19cd8fc338b75d5c7ac5580de1288ebbb7b3133c13a01",
+                         "registros":  500,
+                         "totalRegistrosInformado":  7744,
+                         "totalPaginasInformado":  16
+                     },
+                     {
+                         "arquivo":  "pagina_00016.json",
+                         "sha256":  "a4e67812a3231c1ee0d15802e091dba66befa0548e3326cee85c0a158d7b51e1",
+                         "registros":  244,
+                         "totalRegistrosInformado":  7744,
+                         "totalPaginasInformado":  16
+                     }
+                 ],
+    "saidas":  [
+                   {
+                       "arquivo":  "evt007_20260717_resultados_fatuais.csv",
+                       "sha256":  "5b0efc02b6dc2c4fc06102e48bbf7d141e1bf06e9b9a2eba0c186bca9babd85f"
+                   },
+                   {
+                       "arquivo":  "evt007_20260717_resultados_fatuais_utilizaveis.csv",
+                       "sha256":  "6e390884e702a203038963d3f8942e211c34058c6e31c3c5a484a423e985a081"
+                   },
+                   {
+                       "arquivo":  "evt007_20260717_contratacoes_fatuais.csv",
+                       "sha256":  "85e99daf7d56c0a98c56f219e263d7f5dd11ca2153792759db78b0ecf7295a9f"
+                   },
+                   {
+                       "arquivo":  "evt007_20260717_fornecedores_fatuais.csv",
+                       "sha256":  "0be3ea3d2ea8b3e599833f6cb2dc8dbb09cc13cb4218717b82d884e4f9302b3e"
+                   }
+               ],
+    "ressalvas":  [
+                      "gsbValorHomologadoResultadosD1 soma somente resultados factuais utilizaveis do D-1; nao representa necessariamente o valor total da contratacao.",
+                      "A origem do endpoint e Compras.gov Dados Abertos, mas a plataforma de origem de cada contratacao nao esta confirmada no resultado.",
+                      "Descricao, materialOuServico, codigo CATSER ou CATMAT, objeto e modalidade permanecem pendentes de enriquecimento.",
+                      "Nenhuma regra comercial, corte de valor, rota ou qualificacao foi aplicada."
+                  ]
+}

@@ -1,0 +1,22 @@
+{
+  "referenciaInformadaPeloUsuario": "2026-07-18",
+  "catser": {
+    "arquivo": "catser_20260718.csv",
+    "bytes": 521323,
+    "sha256": "f3cd884220115be97fd7782a25e799d8c64390786794d27c3fef53806e67f264",
+    "registros": 3095,
+    "ativos": 3013,
+    "inativos": 82,
+    "versionado": true
+  },
+  "catmat": {
+    "arquivoOriginal": "catmat.csv",
+    "bytes": 125646629,
+    "sha256": "18d541579765bbb26ac0f231f859b8e805ed53a6d404c1a4b88a11ab23b35db0",
+    "registros": 343601,
+    "dataHoraAtualizacaoInternaMinima": "2021-10-16 09:43:08.030221",
+    "dataHoraAtualizacaoInternaMaxima": "2026-07-16 18:47:21.482448",
+    "versionado": false,
+    "motivo": "Arquivo acima de 100 MB; preservar externamente pelo hash. Nao participa do filtro CATSER."
+  }
+}

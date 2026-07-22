@@ -1,0 +1,15 @@
+﻿{
+    "runName":  "evt007_20260717",
+    "dataResultadoInicial":  "2026-07-17",
+    "dataResultadoFinal":  "2026-07-17",
+    "startedAt":  "2026-07-20T00:50:35.3726743-03:00",
+    "updatedAt":  "2026-07-20T00:50:35.6549713-03:00",
+    "status":  "INTERRUPTED",
+    "totalCandidates":  500,
+    "completedCandidates":  [
+
+                            ],
+    "resultKeys":  [
+
+                   ]
+}

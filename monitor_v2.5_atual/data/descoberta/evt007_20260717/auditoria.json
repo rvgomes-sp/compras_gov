@@ -1,0 +1,39 @@
+﻿{
+    "runName":  "evt007_20260717",
+    "fonte":  "COMPRASGOV_DADOS_ABERTOS",
+    "endpoint":  "https://dadosabertos.compras.gov.br/modulo-contratacoes/3_consultarResultadoItensContratacoes_PNCP_14133",
+    "dataResultadoPncpInicial":  "2026-07-17",
+    "dataResultadoPncpFinal":  "2026-07-17",
+    "cobertura":  "COMPLETA",
+    "totalRegistrosInformado":  7744,
+    "totalPaginasInformado":  16,
+    "paginasConcluidas":  [
+                              1,
+                              2,
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16
+                          ],
+    "counters":  {
+                     "paginasConcluidas":  16,
+                     "registrosLidos":  7744,
+                     "registrosDataResultado":  7744,
+                     "registrosDataDivergente":  0,
+                     "numerosControleInvalidos":  0,
+                     "resultadosSemFornecedor":  0,
+                     "resultadosSemDataInclusaoPncp":  0,
+                     "candidatosUnicos":  1022
+                 },
+    "updatedAt":  "2026-07-20T00:46:17.9790377-03:00"
+}
