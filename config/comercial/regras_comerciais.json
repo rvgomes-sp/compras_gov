@@ -1,0 +1,51 @@
+{
+  "versao": "2.5.1",
+  "statusExecucao": "BLOQUEADA_ATE_ENRIQUECIMENTO_OFICIAL",
+  "moeda": "BRL",
+  "valorMinimo": 1000000,
+  "valorLimiteRota": 10000000,
+  "rotas": {
+    "de1a10milhoes": "VIEIRA_MENDONCA",
+    "acima10milhoes": "VAZQUEZ_FONSECA"
+  },
+  "esferas": {
+    "prioridade": "FEDERAL",
+    "elegiveis": ["FEDERAL", "ESTADUAL", "MUNICIPAL"]
+  },
+  "prioridadesObjeto": [
+    "INFRAESTRUTURA",
+    "OBRAS",
+    "ENGENHARIA",
+    "SANEAMENTO",
+    "ENERGIA",
+    "PORTOS",
+    "AEROPORTOS",
+    "HIDRELETRICAS",
+    "PRESIDIOS",
+    "TIC_CRITICA",
+    "SERVICOS_CONTINUADOS_MAO_DE_OBRA"
+  ],
+  "exclusoesComerciaisAtuais": ["EDUCACAO", "CONCESSAO"],
+  "naoPrioritario": ["MATERIAL_SIMPLES"],
+  "teses": {
+    "limiteCredito": "Aplica-se a todos os segmentos, com atenção especial a construtoras e empresas com carteira simultânea de contratos.",
+    "coberturaTrabalhista": "Aplica-se quando o objeto indicar mão de obra dedicada, dedicação exclusiva, postos de trabalho, terceirização ou serviço continuado."
+  },
+  "regraItens": {
+    "campoIdentificador": "numeroItem",
+    "campoValor": "valorTotalHomologado",
+    "somaContratacaoDefineRotaInicial": true,
+    "avaliacaoIndividualObrigatoria": true,
+    "descartarContratacaoSeItemForaDoCorteEntre1e10": true,
+    "rebaixarAcima10Para1a10QuandoItemForaDoCorte": true,
+    "registrarMotivo": true
+  },
+  "controles": {
+    "exigirFornecedorIdentificado": true,
+    "descartarPorAusenciaDeDado": false,
+    "abordagemAutomatica": false,
+    "validacaoHumanaObrigatoria": true,
+    "modalidadeComoFiltroEntrada": false
+  },
+  "observacao": "Regras GSB separadas dos campos oficiais. O arquivo nao autoriza qualificacao antes do enriquecimento de item, objeto, modalidade, catalogo e origem."
+}

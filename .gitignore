@@ -1,0 +1,21 @@
+# Dados operacionais e resultados
+data/
+output/
+*.jsonl
+*.sqlite
+*.sqlite3
+*.db
+*.log
+
+# Pacotes, planilhas e artefatos temporarios
+*.zip
+*.xlsx
+*.xlsm
+*.tmp
+__pycache__/
+*.pyc
+
+# Arquivos locais de ambiente
+.env
+.env.*
+!.env.example

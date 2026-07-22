@@ -1,0 +1,57 @@
+{
+  "_procedencia": {
+    "tipo": "MANUAL_v2.5",
+    "forca_probatoria": "Transcricao literal do Manual de Integracao v2.5",
+    "secao": "7.21",
+    "campo_api": "categoriaProcessoId",
+    "coletado_em": "2026-07-18T13:19:44.324344",
+    "manual_hash": null,
+    "observacao": "Esta tabela NAO possui endpoint de consulta no PNCP. A evidencia e documental: manual oficial com hash SHA-256."
+  },
+  "itens": [
+    {
+      "codigo": 1,
+      "nome": "Cessao"
+    },
+    {
+      "codigo": 2,
+      "nome": "Compras"
+    },
+    {
+      "codigo": 3,
+      "nome": "Informatica (TIC)"
+    },
+    {
+      "codigo": 4,
+      "nome": "Internacional"
+    },
+    {
+      "codigo": 5,
+      "nome": "Locacao Imoveis"
+    },
+    {
+      "codigo": 6,
+      "nome": "Mao de Obra"
+    },
+    {
+      "codigo": 7,
+      "nome": "Obras"
+    },
+    {
+      "codigo": 8,
+      "nome": "Servicos"
+    },
+    {
+      "codigo": 9,
+      "nome": "Servicos de Engenharia"
+    },
+    {
+      "codigo": 10,
+      "nome": "Servicos de Saude"
+    },
+    {
+      "codigo": 11,
+      "nome": "Alienacao de bens moveis/imoveis"
+    }
+  ]
+}

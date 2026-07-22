@@ -1,0 +1,23 @@
+name: Validar estrutura canônica
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obter repositório
+        uses: actions/checkout@v4
+
+      - name: Validar JSON, documentação e catálogos
+        run: python tests/validar_repositorio.py
+
+      - name: Validar regras PowerShell
+        shell: pwsh
+        run: ./tests/Validar_Estrutura.ps1

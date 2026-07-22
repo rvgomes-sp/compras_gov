@@ -1,0 +1,88 @@
+{
+  "gerado_em": "2026-07-18T13:19:44.324344",
+  "manual": null,
+  "tabelas": {
+    "modalidades": {
+      "origem": "API",
+      "qtd": 19
+    },
+    "instrumentos": {
+      "origem": "API",
+      "qtd": 5
+    },
+    "categorias_item": {
+      "origem": "API",
+      "qtd": 8
+    },
+    "modos_disputa": {
+      "origem": "API",
+      "qtd": 6
+    },
+    "criterios_julgamento": {
+      "origem": "API",
+      "qtd": 9
+    },
+    "tipos_contrato": {
+      "origem": "API",
+      "qtd": 12
+    },
+    "situacao_contratacao": {
+      "origem": "MANUAL",
+      "qtd": 4
+    },
+    "situacao_item": {
+      "origem": "MANUAL",
+      "qtd": 5
+    },
+    "situacao_resultado": {
+      "origem": "MANUAL",
+      "qtd": 2
+    },
+    "categoria_processo": {
+      "origem": "MANUAL",
+      "qtd": 11
+    }
+  },
+  "hashes_sha256": {
+    "categoria_processo.json": {
+      "sha256": "793baa54ea6df32781f72af158516990b27a49b68514ff596dc2abadb7cf5113",
+      "bytes": 1164
+    },
+    "categorias_item.json": {
+      "sha256": "cb3b967ac7db373f82a46d9e8cbf7c08b366a13ae150320a82142cb74dac4375",
+      "bytes": 3076
+    },
+    "criterios_julgamento.json": {
+      "sha256": "5d1ab807388c1a4630815ce666276b1f770f2cc385fea32f2d6dabf91c869b5c",
+      "bytes": 3423
+    },
+    "instrumentos.json": {
+      "sha256": "abc47a7a17f080bdb8706e1d126d6b02a8436f6e809a5beff352d84cfe773d59",
+      "bytes": 3630
+    },
+    "modalidades.json": {
+      "sha256": "89807cd34dcc5df832c11b17dc689611fc66f6cd2c50901ac5840a1be3560dc5",
+      "bytes": 15012
+    },
+    "modos_disputa.json": {
+      "sha256": "c919e0f32aa4304a9ec39dea99adac66f711d6d0c3c8a1003b878442ce397f3e",
+      "bytes": 2334
+    },
+    "situacao_contratacao.json": {
+      "sha256": "25cb3222eee7785298734b5f41b270f379d380c524eeb807ef4ce147cd176bf8",
+      "bytes": 979
+    },
+    "situacao_item.json": {
+      "sha256": "1e3891e08e6d87f9a59cf7f26bb3581f5ac5092fdfe7aa907238f323b6593358",
+      "bytes": 1141
+    },
+    "situacao_resultado.json": {
+      "sha256": "139ae456769a378f5e5c4e0467a8d04f2ef68651d187ace7b03edf5e4a3a7949",
+      "bytes": 729
+    },
+    "tipos_contrato.json": {
+      "sha256": "c6a66f0f2b3b7d5620667411e2e174c8a52c1c66864ed37975d7bc417bbb01a3",
+      "bytes": 4906
+    }
+  }
+}

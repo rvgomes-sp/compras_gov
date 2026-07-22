@@ -1,0 +1,140 @@
+{
+  "_procedencia": {
+    "tipo": "API_PNCP",
+    "forca_probatoria": "Retorno real do PNCP na data da coleta",
+    "url": "https://pncp.gov.br/api/pncp/v1/criterios-julgamentos",
+    "coletado_em": "2026-07-18T13:19:44.324344",
+    "manual_referencia": "v2.5 secao 7.12",
+    "observacao": "Evidencia do PNCP, nao interpretacao da V&F."
+  },
+  "itens": [
+    {
+      "codigo": 1,
+      "nome": "Menor preço",
+      "descricao": null,
+      "ativo": true
+    },
+    {
+      "codigo": 2,
+      "nome": "Maior desconto",
+      "descricao": null,
+      "ativo": true
+    },
+    {
+      "codigo": 3,
+      "nome": "Melhor técnica ou conteúdo artístico",
+      "descricao": null,
+      "ativo": false
+    },
+    {
+      "codigo": 4,
+      "nome": "Técnica e preço",
+      "descricao": null,
+      "ativo": true
+    },
+    {
+      "codigo": 5,
+      "nome": "Maior lance",
+      "descricao": null,
+      "ativo": true
+    },
+    {
+      "codigo": 6,
+      "nome": "Maior retorno econômico",
+      "descricao": null,
+      "ativo": true
+    },
+    {
+      "codigo": 7,
+      "nome": "Não se aplica",
+      "descricao": null,
+      "ativo": true
+    },
+    {
+      "codigo": 8,
+      "nome": "Melhor técnica",
+      "descricao": null,
+      "ativo": true
+    },
+    {
+      "codigo": 9,
+      "nome": "Conteúdo artístico",
+      "descricao": null,
+      "ativo": true
+    }
+  ],
+  "payload_bruto": [
+    {
+      "id": 1,
+      "nome": "Menor preço",
+      "descricao": null,
+      "dataInclusao": "2021-07-28T09:11:47",
+      "dataAtualizacao": "2021-07-28T09:11:47",
+      "statusAtivo": true
+    },
+    {
+      "id": 2,
+      "nome": "Maior desconto",
+      "descricao": null,
+      "dataInclusao": "2021-07-28T09:11:47",
+      "dataAtualizacao": "2021-07-28T09:11:47",
+      "statusAtivo": true
+    },
+    {
+      "id": 3,
+      "nome": "Melhor técnica ou conteúdo artístico",
+      "descricao": null,
+      "dataInclusao": "2021-07-28T09:11:47",
+      "dataAtualizacao": "2021-07-28T09:11:47",
+      "statusAtivo": false
+    },
+    {
+      "id": 4,
+      "nome": "Técnica e preço",
+      "descricao": null,
+      "dataInclusao": "2021-07-28T09:11:47",
+      "dataAtualizacao": "2021-07-28T09:11:47",
+      "statusAtivo": true
+    },
+    {
+      "id": 5,
+      "nome": "Maior lance",
+      "descricao": null,
+      "dataInclusao": "2021-07-28T09:11:47",
+      "dataAtualizacao": "2021-07-28T09:11:47",
+      "statusAtivo": true
+    },
+    {
+      "id": 6,
+      "nome": "Maior retorno econômico",
+      "descricao": null,
+      "dataInclusao": "2021-07-28T09:11:47",
+      "dataAtualizacao": "2021-07-28T09:11:47",
+      "statusAtivo": true
+    },
+    {
+      "id": 7,
+      "nome": "Não se aplica",
+      "descricao": null,
+      "dataInclusao": "2021-07-28T09:11:47",
+      "dataAtualizacao": "2021-07-28T09:11:47",
+      "statusAtivo": true
+    },
+    {
+      "id": 8,
+      "nome": "Melhor técnica",
+      "descricao": null,
+      "dataInclusao": "2023-03-31T22:28:16",
+      "dataAtualizacao": "2023-03-31T22:28:16",
+      "statusAtivo": true
+    },
+    {
+      "id": 9,
+      "nome": "Conteúdo artístico",
+      "descricao": null,
+      "dataInclusao": "2023-03-31T22:28:16",
+      "dataAtualizacao": "2023-03-31T22:28:16",
+      "statusAtivo": true
+    }
+  ]
+}

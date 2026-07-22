@@ -1,0 +1,45 @@
+﻿{
+  "schema": "architecture_governance",
+  "version": "2.0.0",
+  "project": "GSB Monitor V2",
+  "decision_id": "GOV-001",
+  "title": "Estabilidade da matriz de 14 eventos",
+  "status": "active",
+  "principle": "A matriz de 14 eventos é a estrutura permanente da V2. A execução pode começar por eventos comercialmente estratégicos, mas a arquitetura final permanece completa.",
+  "fixed_event_matrix": true,
+  "total_events": 14,
+  "current_operational_start": "EVT-007",
+  "structural_change_policy": {
+    "isolated_event_problem_changes_structure": false,
+    "solve_isolated_problem_locally": true,
+    "minimum_events_with_same_problem_to_trigger_review": 3,
+    "allow_abandon_event": false,
+    "allow_event_disable_temporarily": true,
+    "allow_event_disable_reason": "Somente por limitação operacional temporária, sem remoção da matriz.",
+    "review_required_when": [
+      "same_structural_problem_affects_three_or_more_events",
+      "public_source_does_not_provide_required_minimum_data_for_three_or_more_events",
+      "value_guard_rule_blocks_three_or_more_events_due_same_unresolved_mapping_issue",
+      "document_reader_dependency_blocks_three_or_more_events_without_alternative_evidence",
+      "catalog_or_classification_conflict_affects_three_or_more_events"
+    ]
+  },
+  "execution_policy": {
+    "may_start_from_strategic_event": true,
+    "first_event": "EVT-007",
+    "first_event_name": "Homologação / Adjudicação",
+    "probe_next_events": ["EVT-008", "EVT-009"],
+    "final_goal": "Todos os 14 eventos operando, observando e capturando oportunidades ao longo do fluxo da contratação pública.",
+    "do_not_break_matrix_due_to_commercial_priority": true
+  },
+  "business_positioning": {
+    "statement": "O GSB Monitor V2 será uma inteligência de monitoramento do sistema público orientada por eventos, documentos, evidências, valor confiável, rota operacional e decisão humana.",
+    "do_not_claim": [
+      "prospecção automática sem validação humana",
+      "garantia obrigatória sem documento",
+      "vencedor sem resultado homologado",
+      "contrato ausente sem consulta específica",
+      "valor comercial confiável sem regra de valor"
+    ]
+  }
+}

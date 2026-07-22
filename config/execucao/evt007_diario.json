@@ -1,0 +1,17 @@
+{
+  "nome": "EVT007_D1_DIARIO",
+  "modoDataResultado": "PARAMETRO_OU_D1_LOCAL",
+  "fonte": "COMPRASGOV_DADOS_ABERTOS",
+  "filtrarModalidade": false,
+  "modalidadeIdPermitida": [],
+  "modalidadeIdExcluida": [],
+  "maximoCandidatosPorRodada": 500,
+  "tamanhoPaginaPadrao": 500,
+  "tentativas": 6,
+  "pausaMilissegundos": 900,
+  "pausa429Segundos": 30,
+  "exigirCoberturaCompleta": true,
+  "executarD2": false,
+  "permitirJanelaSuperior": false,
+  "qualificacaoComercialAutomatica": false
+}

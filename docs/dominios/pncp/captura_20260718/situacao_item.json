@@ -1,0 +1,38 @@
+{
+  "_procedencia": {
+    "tipo": "MANUAL_v2.5",
+    "forca_probatoria": "Transcricao literal do Manual de Integracao v2.5",
+    "secao": "7.14",
+    "campo_api": "situacaoCompraItemId",
+    "coletado_em": "2026-07-18T13:19:44.324344",
+    "manual_hash": null,
+    "observacao": "Esta tabela NAO possui endpoint de consulta no PNCP. A evidencia e documental: manual oficial com hash SHA-256."
+  },
+  "itens": [
+    {
+      "codigo": 1,
+      "nome": "Em Andamento",
+      "descricao": "Item com disputa/selecao do fornecedor nao finalizada."
+    },
+    {
+      "codigo": 2,
+      "nome": "Homologado",
+      "descricao": "Item com resultado (fornecedor/arrematante informado)."
+    },
+    {
+      "codigo": 3,
+      "nome": "Anulado/Revogado/Cancelado",
+      "descricao": "Item cancelado conforme justificativa."
+    },
+    {
+      "codigo": 4,
+      "nome": "Deserto",
+      "descricao": "Item sem resultado (sem fornecedores interessados)."
+    },
+    {
+      "codigo": 5,
+      "nome": "Fracassado",
+      "descricao": "Item sem resultado (fornecedores desclassificados ou inabilitados)."
+    }
+  ]
+}
