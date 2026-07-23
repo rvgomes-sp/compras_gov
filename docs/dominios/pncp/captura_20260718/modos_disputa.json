@@ -1,0 +1,98 @@
+{
+  "_procedencia": {
+    "tipo": "API_PNCP",
+    "forca_probatoria": "Retorno real do PNCP na data da coleta",
+    "url": "https://pncp.gov.br/api/pncp/v1/modos-disputas",
+    "coletado_em": "2026-07-18T13:19:44.324344",
+    "manual_referencia": "v2.5 secao 7.9",
+    "observacao": "Evidencia do PNCP, nao interpretacao da V&F."
+  },
+  "itens": [
+    {
+      "codigo": 1,
+      "nome": "Aberto",
+      "descricao": null,
+      "ativo": true
+    },
+    {
+      "codigo": 2,
+      "nome": "Fechado",
+      "descricao": null,
+      "ativo": true
+    },
+    {
+      "codigo": 3,
+      "nome": "Aberto-Fechado",
+      "descricao": null,
+      "ativo": true
+    },
+    {
+      "codigo": 4,
+      "nome": "Dispensa Com Disputa",
+      "descricao": null,
+      "ativo": true
+    },
+    {
+      "codigo": 5,
+      "nome": "Não se aplica",
+      "descricao": null,
+      "ativo": true
+    },
+    {
+      "codigo": 6,
+      "nome": "Fechado-Aberto",
+      "descricao": null,
+      "ativo": true
+    }
+  ],
+  "payload_bruto": [
+    {
+      "id": 1,
+      "nome": "Aberto",
+      "descricao": null,
+      "dataInclusao": "2021-07-28T09:11:47",
+      "dataAtualizacao": "2021-07-28T09:11:47",
+      "statusAtivo": true
+    },
+    {
+      "id": 2,
+      "nome": "Fechado",
+      "descricao": null,
+      "dataInclusao": "2021-07-28T09:11:47",
+      "dataAtualizacao": "2021-07-28T09:11:47",
+      "statusAtivo": true
+    },
+    {
+      "id": 3,
+      "nome": "Aberto-Fechado",
+      "descricao": null,
+      "dataInclusao": "2021-07-28T09:11:47",
+      "dataAtualizacao": "2021-07-28T09:11:47",
+      "statusAtivo": true
+    },
+    {
+      "id": 4,
+      "nome": "Dispensa Com Disputa",
+      "descricao": null,
+      "dataInclusao": "2021-07-28T09:11:47",
+      "dataAtualizacao": "2021-07-28T09:11:47",
+      "statusAtivo": true
+    },
+    {
+      "id": 5,
+      "nome": "Não se aplica",
+      "descricao": null,
+      "dataInclusao": "2021-07-28T09:11:47",
+      "dataAtualizacao": "2021-07-28T09:11:47",
+      "statusAtivo": true
+    },
+    {
+      "id": 6,
+      "nome": "Fechado-Aberto",
+      "descricao": null,
+      "dataInclusao": "2022-12-15T15:43:44",
+      "dataAtualizacao": "2022-12-15T15:43:44",
+      "statusAtivo": true
+    }
+  ]
+}

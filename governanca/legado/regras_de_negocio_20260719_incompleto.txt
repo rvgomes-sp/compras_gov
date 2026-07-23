@@ -1,0 +1,35 @@
+| Dimensão                    | Regra atual                                                                                                                                  |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Esfera                      | Recorte comercial atual prioritariamente federal                                                                                             |
+| Piso comercial              | R$ 10 milhões                                                                                                                                |
+| Aplicação do piso           | Corte no SQLite, não como limitação de coleta ou da API                                                                                      |
+| Agrupamento                 | Itens agrupados no banco por contratação e fornecedor, evitando duplicidade                                                                  |
+| Modalidades do teste atual  | Códigos 4 e 6; o nome oficial correspondente deve ser confirmado na tabela oficial de domínio                                                |
+| Concorrências               | Prioridade estrutural                                                                                                                        |
+| Pregões                     | Permitidos de forma condicionada a objeto, valor, fornecedor e aderência                                                                     |
+| Objeto                      | Infraestrutura, obras, engenharia, saneamento, energia, portos, aeroportos, hidrelétricas, unidades prisionais e tecnologia crítica aderente |
+| Exclusões comerciais atuais | Educação e concessões no recorte definido por Rodrigo                                                                                        |
+| Material simples            | Não entra em prioridade direta                                                                                                               |
+| Credenciamento              | Não gera vencedor único                                                                                                                      |
+| SRP/ata                     | Vai para monitoramento de contrato derivado ou instrumento equivalente                                                                       |
+| Fornecedor                  | Nome e CNPJ precisam aparecer                                                                                                                |
+| Valor                       | Valor homologado prevalece sobre valor estimado                                                                                              |
+| Temporalidade comercial     | Objetivo é receber pela manhã os resultados de homologações do dia anterior                                                                  |
+| Ausência de dado            | Não descarta automaticamente                                                                                                                 |
+| Falha de fonte              | Não cria EVT-008 e não exclui o caso                                                                                                         |
+| Coleta extensa              | Proibida antes de teste controlado                                                                                                           |
+| Radar                       | Apenas casos já registrados no banco                                                                                                         |
+| Abordagem                   | Nenhuma abordagem sem validação humana                                                                                                       |
+| Regra técnica               | Limites de páginas, itens ou casos são proteções de execução; não critérios comerciais                                                       |
+
+Atualização das regras
+Esfera							Recorte Federal, Estadual e Municipal
+Piso Comercial					Grupos entre 1 e 5 milhoes 
+											>5 e 10 milhões
+											> 10 milhoes
+											> 1 e < 10 para contratos de mao de obra dedicada
+Aplicação do Piso				O que é mais pratico de manipular os dados e trabalhar: trazer a base para o SQL e extrair os filtros com chance de analisar oportunidades para 
+								melhoria de regra, ou já exporta direto para o monitor como regra de oportunidade defiida?
+Agrupamento						Lista cada lote ou cada unidade de objeto entre N vencedores/tomadores ; cada unidade , cada lote deve estar dentro da regra de valor,
+								somados devem seguir a rota de qual alcance e qual empresa deve seguir
+Tabelas de dominio devem ser confirmadas na 

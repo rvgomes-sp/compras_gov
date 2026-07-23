@@ -1,0 +1,14 @@
+# Evidências preservadas byte a byte; não normalizar finais de linha.
+docs/pncp_v2.5/**/*.html -text -diff
+docs/pncp_v2.5/openapi/api-docs.json -text -diff
+docs/catalogo_compras_gov/fontes/catser_20260718.csv -text -diff
+docs/dominios/**/*.json -text -diff
+governanca/legado/*.txt -text -diff
+
+# Código e governança canônica usam LF.
+*.ps1 text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.css text eol=lf
+*.js text eol=lf

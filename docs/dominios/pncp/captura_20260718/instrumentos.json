@@ -1,0 +1,94 @@
+{
+  "_procedencia": {
+    "tipo": "API_PNCP",
+    "forca_probatoria": "Retorno real do PNCP na data da coleta",
+    "url": "https://pncp.gov.br/api/pncp/v1/tipos-instrumentos-convocatorios",
+    "coletado_em": "2026-07-18T13:19:44.324344",
+    "manual_referencia": "v2.5 secao 7.3",
+    "observacao": "Evidencia do PNCP, nao interpretacao da V&F."
+  },
+  "itens": [
+    {
+      "codigo": 1,
+      "nome": "Edital",
+      "descricao": "Instrumento convocatório utilizado no leilão, no diálogo competitivo, no concurso, na concorrência e no pregão.",
+      "ativo": true
+    },
+    {
+      "codigo": 2,
+      "nome": "Aviso de Contratação Direta",
+      "descricao": "Instrumento convocatório utilizado na Dispensa com Disputa.",
+      "ativo": true
+    },
+    {
+      "codigo": 3,
+      "nome": "Ato que autoriza a Contratação Direta",
+      "descricao": "Instrumento convocatório utilizado na Dispensa sem Disputa ou Inexigibilidade.",
+      "ativo": true
+    },
+    {
+      "codigo": 4,
+      "nome": "Edital de Chamamento Público",
+      "descricao": "Instrumento convocatório utilizado para processos auxiliares de manifestação de interesse, de pré-qualificação e de credenciamento.",
+      "ativo": true
+    },
+    {
+      "codigo": 5,
+      "nome": "Não se Aplica",
+      "descricao": "Não se Aplica",
+      "ativo": false
+    }
+  ],
+  "payload_bruto": [
+    {
+      "id": 1,
+      "nome": "Edital",
+      "descricao": "Instrumento convocatório utilizado no leilão, no diálogo competitivo, no concurso, na concorrência e no pregão.",
+      "obrigatoriedadeDataAberturaPropostaNome": "Obrigatório",
+      "obrigatoriedadeDataEncerramentoPropostaNome": "Obrigatório",
+      "dataInclusao": "2021-07-28T09:11:47",
+      "dataAtualizacao": "2023-12-15T14:59:42",
+      "statusAtivo": true
+    },
+    {
+      "id": 2,
+      "nome": "Aviso de Contratação Direta",
+      "descricao": "Instrumento convocatório utilizado na Dispensa com Disputa.",
+      "obrigatoriedadeDataAberturaPropostaNome": "Obrigatório",
+      "obrigatoriedadeDataEncerramentoPropostaNome": "Obrigatório",
+      "dataInclusao": "2021-07-28T09:11:47",
+      "dataAtualizacao": "2023-12-15T14:59:42",
+      "statusAtivo": true
+    },
+    {
+      "id": 3,
+      "nome": "Ato que autoriza a Contratação Direta",
+      "descricao": "Instrumento convocatório utilizado na Dispensa sem Disputa ou Inexigibilidade.",
+      "obrigatoriedadeDataAberturaPropostaNome": "Não se aplica",
+      "obrigatoriedadeDataEncerramentoPropostaNome": "Não se aplica",
+      "dataInclusao": "2021-07-28T09:11:47",
+      "dataAtualizacao": "2023-12-15T14:59:42",
+      "statusAtivo": true
+    },
+    {
+      "id": 4,
+      "nome": "Edital de Chamamento Público",
+      "descricao": "Instrumento convocatório utilizado para processos auxiliares de manifestação de interesse, de pré-qualificação e de credenciamento.",
+      "obrigatoriedadeDataAberturaPropostaNome": "Obrigatório",
+      "obrigatoriedadeDataEncerramentoPropostaNome": "Não obrigatório",
+      "dataInclusao": "2023-12-15T14:59:42",
+      "dataAtualizacao": "2023-12-15T14:59:42",
+      "statusAtivo": true
+    },
+    {
+      "id": 5,
+      "nome": "Não se Aplica",
+      "descricao": "Não se Aplica",
+      "obrigatoriedadeDataAberturaPropostaNome": "Não obrigatório",
+      "obrigatoriedadeDataEncerramentoPropostaNome": "Não obrigatório",
+      "dataInclusao": "2026-06-11T14:59:21",
+      "dataAtualizacao": "2026-06-15T15:01:00",
+      "statusAtivo": false
+    }
+  ]
+}

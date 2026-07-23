@@ -1,0 +1,33 @@
+{
+  "_procedencia": {
+    "tipo": "MANUAL_v2.5",
+    "forca_probatoria": "Transcricao literal do Manual de Integracao v2.5",
+    "secao": "7.13",
+    "campo_api": "situacaoCompraId",
+    "coletado_em": "2026-07-18T13:19:44.324344",
+    "manual_hash": null,
+    "observacao": "Esta tabela NAO possui endpoint de consulta no PNCP. A evidencia e documental: manual oficial com hash SHA-256."
+  },
+  "itens": [
+    {
+      "codigo": 1,
+      "nome": "Divulgada no PNCP",
+      "descricao": "Contratacao divulgada no PNCP. Situacao atribuida na inclusao da contratacao."
+    },
+    {
+      "codigo": 2,
+      "nome": "Revogada",
+      "descricao": "Contratacao revogada conforme justificativa."
+    },
+    {
+      "codigo": 3,
+      "nome": "Anulada",
+      "descricao": "Contratacao anulada conforme justificativa."
+    },
+    {
+      "codigo": 4,
+      "nome": "Suspensa",
+      "descricao": "Contratacao suspensa conforme justificativa."
+    }
+  ]
+}
