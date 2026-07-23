@@ -2,27 +2,26 @@
 
 ## Fontes canônicas
 
-| Fonte | SHA-256 | Resultado |
+| Fonte | SHA-256 | Cobertura |
 |---|---|---|
-| Manual PNCP 2.5 completo | `26d5a5cff042faf28c09fd10e9edc32eaeca38f565ea8926699aab932e121449` | Íntegro |
-| OpenAPI `api-docs.json` | `dfe448f39a3d6602d688465d2159fa75233ac56aa447dee115fbbcd2eb4fe7af` | Íntegro; 109 rotas e 190 operações na auditoria local |
+| Manual PNCP 2.5 completo | `26d5a5cff042faf28c09fd10e9edc32eaeca38f565ea8926699aab932e121449` | Documento integral |
+| OpenAPI `api-docs.json` | `dfe448f39a3d6602d688465d2159fa75233ac56aa447dee115fbbcd2eb4fe7af` | 109 rotas e 190 operações |
 
-O Manual completo reúne todas as famílias documentadas. Os HTML individuais são recortes de consulta e não condição de completude.
+## Decisão de consolidação
 
-## Recortes acrescentados na consolidação
+Em 22 de julho de 2026, os recortes HTML numerados das famílias de compras,
+atas e órgãos foram retirados do repositório. Eles repetiam conteúdo já
+preservado no Manual completo e no OpenAPI e criavam duas referências possíveis
+para a mesma API.
 
-| Seção | Arquivo | SHA-256 |
-|---|---|---|
-| 11.11 | `endpoints/atas/11.11_consultar_historico_ata.html` | `316ddbcb2e12794f5acf3350f983e607bba0ea7b8f8eb35d1c772f4968e82107` |
-| 14.6 | `endpoints/orgaos/14.6_consultar_unidade.html` | `bded39c423bd4a0fa2d72e0b6f967f94358384867f31e93cdde84d53c6d14f1f` |
-| 14.7 | `endpoints/orgaos/14.7_consultar_unidades_orgao.html` | `051bc8c7bce8dc08067017463b1b4782f02bbb097bbe0c2fad0858d5dfbdc169` |
+A ausência do antigo diretório `endpoints/` passou a ser verificada pelos testes
+do repositório. A documentação PNCP somente será atualizada pela substituição
+controlada de uma fonte integral, com conferência de versão, cobertura e hash.
 
-O arquivo recebido para 11.11 possuía extensão `.json`, mas seu conteúdo real é HTML completo; foi renomeado sem alterar os bytes.
-
-## Decisões
+## Regras permanentes
 
 - preservar uma única cópia do Manual e do OpenAPI;
-- não versionar ZIPs, diretórios `_files`, CSS ou JavaScript repetidos da documentação;
-- manter endpoints POST e PUT somente como referência, sem autorização de execução;
+- não versionar recortes HTML, ZIPs, diretórios `_files`, CSS ou JavaScript da documentação;
+- manter endpoints de escrita somente como referência, sem autorização de execução;
 - não substituir `dataResultadoPncp` por publicação ou atualização;
-- usar as famílias 11, 12 e 14 nos eventos posteriores apenas após regra e teste próprios.
+- ativar novas famílias em eventos posteriores apenas após regra e teste próprios.

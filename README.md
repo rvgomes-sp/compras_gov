@@ -41,7 +41,7 @@ O executor exige cobertura completa por padrão. `-PermitirCoberturaParcial` exi
 - `config/execucao/`: controles técnicos da rodada diária.
 - `config/governanca/`: matriz estável dos 14 eventos.
 - `governanca/`: decisões canônicas e regras de negócio.
-- `docs/`: Manual PNCP 2.5, OpenAPI, endpoints e fotografias de domínio.
+- `docs/`: fontes oficiais canônicas do PNCP, CNPJ, Obrasgov e fotografias de domínio.
 - `prototypes/`: interfaces sem dados reais e sem função operacional.
 
 ## Regras incontornáveis
