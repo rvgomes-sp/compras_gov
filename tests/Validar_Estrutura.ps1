@@ -18,6 +18,9 @@ $paths = [ordered]@{
     eventMap = Join-Path $Root "config\governanca\event_data_map.json"
     manual = Join-Path $Root "docs\pncp_v2.5\manual\manual_integracao_pncp_v2.5.html"
     openapi = Join-Path $Root "docs\pncp_v2.5\openapi\api-docs.json"
+    sourceRegistry = Join-Path $Root "config\api\fontes_oficiais.json"
+    cnpjOpenapi = Join-Path $Root "docs\cnpj\openapi\api-docs.json"
+    obrasgovOpenapi = Join-Path $Root "docs\obrasgov\openapi\api-docs.json"
 }
 
 foreach ($path in $paths.Values) {
@@ -34,6 +37,10 @@ $consolidator = Get-Content -LiteralPath $paths.consolidator -Raw -Encoding UTF8
 $executor = Get-Content -LiteralPath $paths.executor -Raw -Encoding UTF8
 $collector = Get-Content -LiteralPath $paths.collector -Raw -Encoding UTF8
 $qualifier = Get-Content -LiteralPath $paths.qualifier -Raw -Encoding UTF8
+$sourceRegistry = Get-Content -LiteralPath $paths.sourceRegistry -Raw -Encoding UTF8 | ConvertFrom-Json
+$pncpOpenapi = Get-Content -LiteralPath $paths.openapi -Raw -Encoding UTF8 | ConvertFrom-Json
+$cnpjOpenapi = Get-Content -LiteralPath $paths.cnpjOpenapi -Raw -Encoding UTF8 | ConvertFrom-Json
+$obrasgovOpenapi = Get-Content -LiteralPath $paths.obrasgovOpenapi -Raw -Encoding UTF8 | ConvertFrom-Json
 
 if ([string]$exec.modoDataResultado -ne 'PARAMETRO_OU_D1_LOCAL') {
     throw "A execucao diaria deve aceitar data explicita ou calcular D-1 local."
@@ -86,6 +93,23 @@ if ($qualifier -notmatch 'QUALIFICACAO COMERCIAL BLOQUEADA') {
     throw "A qualificacao comercial deve permanecer bloqueada ate o enriquecimento oficial."
 }
 
+if (@($pncpOpenapi.paths.PSObject.Properties).Count -ne 109) {
+    throw "OpenAPI PNCP deve conter 109 rotas."
+}
+if ([int]$sourceRegistry.fontes.pncp.quantidadeRotas -ne 109 -or [int]$sourceRegistry.fontes.pncp.quantidadeOperacoes -ne 190) {
+    throw "Registro de fontes nao confere com o OpenAPI PNCP."
+}
+if ([string]$cnpjOpenapi.info.version -ne '2.0.2' -or @($cnpjOpenapi.paths.PSObject.Properties).Count -ne 3) {
+    throw "OpenAPI CNPJ deve permanecer na versao 2.0.2 com 3 rotas."
+}
+$cnpjFields = @($cnpjOpenapi.components.schemas.CNPJempresa.properties.PSObject.Properties.Name)
+foreach ($campo in @('ni','nomeFantasia','situacaoCadastral','naturezaJuridica','dataAbertura','cnaePrincipal','endereco','municipioJurisdicao','telefone','correioEletronico','capitalSocial','porte','situacaoEspecial','dataSituacaoEspecial','socios')) {
+    if ($cnpjFields -notcontains $campo) { throw "Campo comercial ausente no OpenAPI CNPJ: $campo" }
+}
+if ([string]$obrasgovOpenapi.info.version -ne '1.0.15' -or @($obrasgovOpenapi.paths.PSObject.Properties).Count -ne 7) {
+    throw "OpenAPI Obrasgov deve permanecer na versao 1.0.15 com 7 rotas."
+}
+
 if (-not [bool]$governance.fixed_event_matrix -or [int]$governance.total_events -ne 14) {
     throw "GOV-001 deve preservar a matriz fixa de 14 eventos."
 }
@@ -109,6 +133,8 @@ foreach ($codigo in @('8729','14397','5380')) {
 $hashes = @(
     [pscustomobject]@{ path=$paths.manual; expected='26d5a5cff042faf28c09fd10e9edc32eaeca38f565ea8926699aab932e121449' },
     [pscustomobject]@{ path=$paths.openapi; expected='dfe448f39a3d6602d688465d2159fa75233ac56aa447dee115fbbcd2eb4fe7af' },
+    [pscustomobject]@{ path=$paths.cnpjOpenapi; expected='e3f913ba260967c5a54e34bd52cdb670045c510fde3be4516fffcb493e258ee5' },
+    [pscustomobject]@{ path=$paths.obrasgovOpenapi; expected='63ae7fa2e309a3cf58ff22efe2113e28d663443bc9a84654a8428d89dba763f5' },
     [pscustomobject]@{ path=$paths.catalogSource; expected='f3cd884220115be97fd7782a25e799d8c64390786794d27c3fef53806e67f264' }
 )
 foreach ($entry in $hashes) {
@@ -116,8 +142,11 @@ foreach ($entry in $hashes) {
     if ($actual -ne $entry.expected) { throw "Hash divergente: $($entry.path)" }
 }
 
-foreach ($forbidden in @('data','output')) {
+foreach ($forbidden in @('data','output','docs\pncp_v2.5\endpoints')) {
     if (Test-Path -LiteralPath (Join-Path $Root $forbidden)) { throw "Diretorio operacional nao deve estar versionado: $forbidden" }
+}
+foreach ($legacySource in @('docs\cnpj_api_governo_swagger.json','docs\api-obrasgov-docs.json')) {
+    if (Test-Path -LiteralPath (Join-Path $Root $legacySource)) { throw "Fonte fora da pasta canonica: $legacySource" }
 }
 foreach ($forbidden in @('Importar_Candidatos_V2.ps1','candidatos_evt007.csv')) {
     if (Get-ChildItem -LiteralPath $Root -Recurse -File -Filter $forbidden -ErrorAction SilentlyContinue) { throw "Contaminacao V2 detectada: $forbidden" }
@@ -129,4 +158,6 @@ Write-Host "[OK] Nenhuma modalidade excluída; Pregão Eletrônico permanece."
 Write-Host "[OK] Descoberta completa e consolidação factual estão encadeadas."
 Write-Host "[OK] Qualificação comercial permanece bloqueada."
 Write-Host "[OK] Matriz de 14 eventos preservada."
-Write-Host "[OK] Manual, OpenAPI e CATSER conferidos por SHA-256."
+Write-Host "[OK] PNCP integral; recortes numerados ausentes."
+Write-Host "[OK] CNPJ e Obrasgov validados por versão, cobertura e SHA-256."
+Write-Host "[OK] Manual, OpenAPIs e CATSER conferidos por SHA-256."

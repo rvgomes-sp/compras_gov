@@ -1,0 +1,32 @@
+{
+  "versao": 1,
+  "politica": "Uma fonte integral canônica por API; recortes e cópias paralelas são proibidos.",
+  "fontes": {
+    "pncp": {
+      "manual": "docs/pncp_v2.5/manual/manual_integracao_pncp_v2.5.html",
+      "openapi": "docs/pncp_v2.5/openapi/api-docs.json",
+      "versaoManual": "2.5",
+      "quantidadeRotas": 109,
+      "quantidadeOperacoes": 190
+    },
+    "cnpj": {
+      "openapi": "docs/cnpj/openapi/api-docs.json",
+      "versao": "2.0.2",
+      "quantidadeRotas": 3,
+      "consultaEnriquecimento": "/api-cnpj-empresa/v2/empresa/{CNPJempresa}",
+      "estado": "DOCUMENTADA_NAO_ATIVADA"
+    },
+    "obrasgov": {
+      "openapi": "docs/obrasgov/openapi/api-docs.json",
+      "versao": "1.0.15",
+      "quantidadeRotas": 7,
+      "estado": "DOCUMENTADA_NAO_ATIVADA"
+    }
+  },
+  "proibicoes": [
+    "docs/pncp_v2.5/endpoints",
+    "arquivos ZIP de documentação",
+    "diretórios _files de páginas salvas",
+    "credenciais e tokens"
+  ]
+}

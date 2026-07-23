@@ -7,11 +7,15 @@
     "resultados": "/v1/orgaos/{cnpj}/compras/{ano}/{sequencial}/itens/{numeroItem}/resultados",
     "historico": "/v1/orgaos/{cnpj}/compras/{ano}/{sequencial}/historico"
   },
-  "referencias": {
-    "contratacao": "10.5",
-    "itens": "10.13",
-    "resultados": "10.17",
-    "historico": "10.19"
+  "referenciasCanonicas": {
+    "manual": "docs/pncp_v2.5/manual/manual_integracao_pncp_v2.5.html",
+    "openapi": "docs/pncp_v2.5/openapi/api-docs.json",
+    "operacoes": {
+      "contratacao": "Manual integral: Consultar uma Contratação",
+      "itens": "pesquisarCompraItem",
+      "resultados": "recuperarResultados",
+      "historico": "consultarCompra"
+    }
   },
   "parametros": [
     "cnpj",
